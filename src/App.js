@@ -10,19 +10,22 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
    <Router>
-    <nav className="col" style={{maxWidth:"20%"}} className="nav flex-column">
+    <div className='row'>
+    <nav style={{maxWidth:"20%"}} className="nav flex-column ">
     <Link className="nav-link" to='/'>Home</Link>
     <Link className="nav-link" to='/buyers'>Buyers</Link>
     <Link className="nav-link" to='/sellers'>Sellers</Link>
     <Link className="nav-link" to='/properties'>Properties</Link>
     </nav>
-{/* Buyers, sellers, properties, home */}
+<div className='col'>
 <Routes>
-  <Route path='/' element={<Home/>}/>
+   <Route path='/' element={<Home/>}/>
   <Route path='/buyers' element={<Buyers/>}/>
   <Route path='/properties' element={<Properties/>}/>
   <Route path='/sellers' element={<Sellers/>}/>
 </Routes>
+</div>
+</div>
    </Router>
   );
 }
