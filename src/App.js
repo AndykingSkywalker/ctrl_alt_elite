@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import { Link, Route, Routes, BrowserRouter as Router } from 'react-router-dom'
+import Home from './Components/Routing/Home';
+import Buyers from './Components/Routing/Buyers';
+import Properties from './Components/Routing/Properties';
+import Sellers from './Components/Routing/Sellers';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Router>
+    <div className='row'>
+    <nav style={{maxWidth:"20%"}} className="nav flex-column ">
+    <Link className="nav-link" to='/'>Home</Link>
+    <Link className="nav-link" to='/buyers'>Buyers</Link>
+    <Link className="nav-link" to='/sellers'>Sellers</Link>
+    <Link className="nav-link" to='/properties'>Properties</Link>
+    </nav>
+<div className='col'>
+<Routes>
+   <Route path='/' element={<Home/>}/>
+  <Route path='/buyers' element={<Buyers/>}/>
+  <Route path='/properties' element={<Properties/>}/>
+  <Route path='/sellers' element={<Sellers/>}/>
+</Routes>
+</div>
+</div>
+   </Router>
   );
 }
 
