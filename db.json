@@ -1,0 +1,30 @@
+{
+  "buyers": [
+    {
+      "firstName": "Nathan",
+      "lastName": "Liddle",
+      "postCode": "NP72 9AN",
+      "phoneNum": "07938593017",
+      "emailAdd": "nathansemail@gmail.com",
+      "id": 1
+    },
+    {
+      "firstName": "Paige",
+      "lastName": "Godwin",
+      "postCode": "NP19 0RW",
+      "phoneNum": "07850280289",
+      "emailAdd": "paige227@hotmail.co.uk",
+      "id": 2
+    },
+    {
+      "firstName": "rick",
+      "lastName": "miles",
+      "postCode": "np82 6di",
+      "phoneNum": "08264928468",
+      "emailAdd": "rm@gmail.com",
+      "id": 3
+    }
+  ],
+  "sellers": [],
+  "properties": []
+}
