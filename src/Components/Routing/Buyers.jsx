@@ -1,6 +1,7 @@
 import axios from "axios";
 // installed axios (npm install axios) and then imported
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Buyer from "../Buyer";
 
 
 function Buyers() {
@@ -11,26 +12,29 @@ function Buyers() {
     const [phoneNum, setPhoneNum] = useState("");
     const [emailAdd, setEmailAdd] = useState("");
     const [buyers, setBuyers] = useState([])
-    const buyerComponent =[]
+    const buyerComponent = []
 
-    function fetchBuyers() {
 
-        axios.get("http://localhost:3030/buyers")
+    function getBuyers() {
+        axios
+            .get("http://localhost:3030/buyers")
             .then((response) => {
                 setBuyers(response.data)
             })
             .catch(error => console.error(error))
-
-            
-        for (let buyer of buyers) {
-            buyerComponent.push(<tr>{buyer}</tr>)
-        }
-
     }
+    useEffect(getBuyers, [])
 
-
-
-
+    for (let buyer of buyers) {
+        buyerComponent.push(
+            <Buyer
+                firstName={buyer.firstName}
+                lastName={buyer.lastName}
+                postCode={buyer.postCode}
+                phoneNum={buyer.phoneNum}
+                emailAdd={buyer.emailAdd}
+            />)
+    }
 
 
     const handleSubmit = event => {
@@ -47,6 +51,7 @@ function Buyers() {
                 setPostCode("");
                 setPhoneNum("");
                 setEmailAdd("");
+                getBuyers()
             })
             .catch(error => console.error(error))
 
@@ -59,36 +64,41 @@ function Buyers() {
         <div >
             <h1>Buyers page</h1>
             {/* form with inputs for each piece of data */}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} >
                 {/* NEED TO FIGURE OUT HOW TO CLEAR FIELDS ON SUBMIT */}
-                <input value={firstName} onChange={event => setFirstName(event.target.value)} placeholder="First Name" type="text"></input>
-                <input value={lastName} onChange={event => setLastName(event.target.value)} placeholder="Last Name" type="text"></input>
-                <input value={postCode} onChange={event => setPostCode(event.target.value)} placeholder="Post Code" type="text"></input>
-                <input value={phoneNum} onChange={event => setPhoneNum(event.target.value)} placeholder="Phone Number" type="tel"></input>
-                <input value={emailAdd} onChange={event => setEmailAdd(event.target.value)} placeholder="Email Address" type="email"></input>
-                <button type="submit" >Submit</button>
+                <input className="form-control" value={firstName} onChange={event => setFirstName(event.target.value)} placeholder="First Name" type="text"></input>
+                <input className="form-control" value={lastName} onChange={event => setLastName(event.target.value)} placeholder="Last Name" type="text"></input>
+                <input className="form-control" value={postCode} onChange={event => setPostCode(event.target.value)} placeholder="Post Code" type="text"></input>
+                <input className="form-control" value={phoneNum} onChange={event => setPhoneNum(event.target.value)} placeholder="Phone Number" type="tel"></input>
+                <input className="form-control" value={emailAdd} onChange={event => setEmailAdd(event.target.value)} placeholder="Email Address" type="email"></input>
+                <button className="form-control" type="submit" >Submit</button>
             </form>
 
 
             {/* basic table that will eventually display the data */}
+<br/>
+<br/>
+<br/>
 
 
-
-            <table>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Post Code</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                </tr>
-                {/* {fetchBuyers()}
-                {buyerComponent} */}
+            <table className="table table-bordered ">
+                <thead className="table-dark">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Post Code</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody className="table-group-divider">
                 
+                                    {buyerComponent}
+                </tbody>
 
             </table>
 
-        </div>
+        </div >
 
     )
 }
