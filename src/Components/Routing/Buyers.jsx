@@ -61,24 +61,30 @@ function Buyers() {
 
 
 
-        <div >
+        <div style={{ textAlign: "center", marginTop: "50px" }}>
             <h1>Buyers page</h1>
             {/* form with inputs for each piece of data */}
-            <form onSubmit={handleSubmit} >
-                {/* NEED TO FIGURE OUT HOW TO CLEAR FIELDS ON SUBMIT */}
-                <input className="form-control" value={firstName} onChange={event => setFirstName(event.target.value)} placeholder="First Name" type="text"></input>
-                <input className="form-control" value={lastName} onChange={event => setLastName(event.target.value)} placeholder="Last Name" type="text"></input>
-                <input className="form-control" value={postCode} onChange={event => setPostCode(event.target.value)} placeholder="Post Code" type="text"></input>
-                <input className="form-control" value={phoneNum} onChange={event => setPhoneNum(event.target.value)} placeholder="Phone Number" type="tel"></input>
-                <input className="form-control" value={emailAdd} onChange={event => setEmailAdd(event.target.value)} placeholder="Email Address" type="email"></input>
-                <button className="form-control" type="submit" >Submit</button>
-            </form>
 
+            <div ClassName="col">
+                <form onSubmit={handleSubmit} className="row row-cols-lg-auto g-3 align-items-center">
+
+                    {/* NEED TO FIGURE OUT HOW TO CLEAR FIELDS ON SUBMIT */}
+                    <input className="form-control" value={firstName} onChange={event => setFirstName(event.target.value)} placeholder="First Name" type="text"></input>
+
+                    <input className="form-control" value={lastName} onChange={event => setLastName(event.target.value)} placeholder="Last Name" type="text"></input>
+                    <input className="form-control" value={postCode} onChange={event => setPostCode(event.target.value)} placeholder="Post Code" type="text"></input>
+                    <input className="form-control" value={phoneNum} onChange={event => setPhoneNum(event.target.value)} placeholder="Phone Number" type="tel"></input>
+                    <input className="form-control" value={emailAdd} onChange={event => setEmailAdd(event.target.value)} placeholder="Email Address" type="email"></input>
+                    <button className="form-control" type="submit" >Submit</button>
+
+                </form>
+
+            </div>
 
             {/* basic table that will eventually display the data */}
-<br/>
-<br/>
-<br/>
+            <br />
+            <br />
+            <br />
 
 
             <table className="table table-bordered ">
@@ -92,8 +98,8 @@ function Buyers() {
                     </tr>
                 </thead>
                 <tbody className="table-group-divider">
-                
-                                    {buyerComponent}
+
+                    {buyerComponent}
                 </tbody>
 
             </table>
