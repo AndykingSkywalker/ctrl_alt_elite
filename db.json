@@ -75,5 +75,33 @@
       "id": 2
     }
   ],
-  "properties": []
+  "properties": [
+    {
+      "prc": "£100,000",
+      "loc": "Leeds",
+      "pcod": "LS1 1WQ",
+      "beds": "3",
+      "bath": "2",
+      "grdn": "Yes",
+      "id": 1
+    },
+    {
+      "prc": "£250,000",
+      "loc": "Oxford",
+      "pcod": "OX12 2LS",
+      "beds": "2",
+      "bath": "1",
+      "grdn": "Yes",
+      "id": 2
+    },
+    {
+      "prc": "£80,000",
+      "loc": "Bradford",
+      "pcod": "BD4 1QQ",
+      "beds": "1",
+      "bath": "1",
+      "grdn": "No",
+      "id": 3
+    }
+  ]
 }
