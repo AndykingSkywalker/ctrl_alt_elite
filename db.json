@@ -39,8 +39,41 @@
       "phoneNum": "07829478293",
       "emailAdd": "ajk@gmail.com",
       "id": 5
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Balde",
+      "postCode": "NP20 5TH",
+      "phoneNum": "07845698302",
+      "emailAdd": "Leo@gmail.com",
+      "id": 7
+    },
+    {
+      "firstName": "Birra",
+      "lastName": "Moretti",
+      "postCode": "CF10 3DR",
+      "phoneNum": "01114789525",
+      "emailAdd": "Pints@gmail.com",
+      "id": 8
     }
   ],
-  "sellers": [],
+  "sellers": [
+    {
+      "firstName": "Avatar",
+      "lastName": "Liddle",
+      "postCode": "DT11 2SD",
+      "phoneNum": "07845512489",
+      "emailAdd": "Avs@gmail.com",
+      "id": 1
+    },
+    {
+      "firstName": "Angelo",
+      "lastName": "Poretti",
+      "postCode": "P1 4FE",
+      "phoneNum": "04465892474",
+      "emailAdd": "Poretti@gmail.com",
+      "id": 2
+    }
+  ],
   "properties": []
 }
