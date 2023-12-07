@@ -1,0 +1,79 @@
+{
+  "buyers": [
+    {
+      "firstName": "Nathan",
+      "lastName": "Liddle",
+      "postCode": "NP72 9AN",
+      "phoneNum": "07938593017",
+      "emailAdd": "nathansemail@gmail.com",
+      "id": 1
+    },
+    {
+      "firstName": "Paige",
+      "lastName": "Godwin",
+      "postCode": "NP19 0RW",
+      "phoneNum": "07850280289",
+      "emailAdd": "paige227@hotmail.co.uk",
+      "id": 2
+    },
+    {
+      "firstName": "Rick",
+      "lastName": "Miles",
+      "postCode": "NP82 6DI",
+      "phoneNum": "08264928468",
+      "emailAdd": "rm@gmail.com",
+      "id": 3
+    },
+    {
+      "firstName": "Jordan",
+      "lastName": "Harrison",
+      "postCode": "NP82 3FE",
+      "phoneNum": "07829572938",
+      "emailAdd": "j@gmail.com",
+      "id": 4
+    },
+    {
+      "firstName": "Andrew",
+      "lastName": "King",
+      "postCode": "NP25 6WE",
+      "phoneNum": "07829478293",
+      "emailAdd": "ajk@gmail.com",
+      "id": 5
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Balde",
+      "postCode": "NP20 5TH",
+      "phoneNum": "07845698302",
+      "emailAdd": "Leo@gmail.com",
+      "id": 7
+    },
+    {
+      "firstName": "Birra",
+      "lastName": "Moretti",
+      "postCode": "CF10 3DR",
+      "phoneNum": "01114789525",
+      "emailAdd": "Pints@gmail.com",
+      "id": 8
+    }
+  ],
+  "sellers": [
+    {
+      "firstName": "Avatar",
+      "lastName": "Liddle",
+      "postCode": "DT11 2SD",
+      "phoneNum": "07845512489",
+      "emailAdd": "Avs@gmail.com",
+      "id": 1
+    },
+    {
+      "firstName": "Angelo",
+      "lastName": "Poretti",
+      "postCode": "P1 4FE",
+      "phoneNum": "04465892474",
+      "emailAdd": "Poretti@gmail.com",
+      "id": 2
+    }
+  ],
+  "properties": []
+}
