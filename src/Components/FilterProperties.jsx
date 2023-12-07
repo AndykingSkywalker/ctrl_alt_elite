@@ -82,6 +82,7 @@ useEffect(getProperties, [])
 
   return (
     <div className="container text-center">
+        <h2 style={{textAlign: "center"}}>Filter Properties</h2>
       <div className="row">
         <div className="col">
           <label htmlFor="exampleFormControlInput1" className="form-label">

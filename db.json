@@ -102,6 +102,15 @@
       "bath": "1",
       "grdn": "No",
       "id": 3
+    },
+    {
+      "prc": "£1,000,000",
+      "loc": "Wakefield",
+      "pcod": "WF12 4AA",
+      "beds": "4",
+      "bath": "3",
+      "grdn": "Yes",
+      "id": 4
     }
   ]
 }
