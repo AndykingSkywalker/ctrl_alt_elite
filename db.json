@@ -55,6 +55,14 @@
       "phoneNum": "01114789525",
       "emailAdd": "Pints@gmail.com",
       "id": 8
+    },
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "postCode": "LS1 2JF",
+      "phoneNum": "07888888888",
+      "emailAdd": "homersimpson@gmail.com",
+      "id": 9
     }
   ],
   "sellers": [
