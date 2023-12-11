@@ -52,10 +52,11 @@ useEffect(getProperties, [])
         bath={property.bath}
         grdn={property.grdn}
         propertyStatus={property.propertyStatus}
+        sellnme={property.sellnme}
+
       />
     );
   }
-
 
 
   function handleLocationFilter(event) {

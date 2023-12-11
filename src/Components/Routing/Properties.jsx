@@ -1,7 +1,5 @@
 import AddNewProperty from "../AddNewProperty";
-import AddProperties from "../AddProperties";
-import FilterProperties from "../FilterProperties";
-import AddProperty from "../SubmitProperty";
+
 
 function Properties() {
     return ( 

@@ -81,10 +81,27 @@
       "phoneNum": "04465892474",
       "emailAdd": "Poretti@gmail.com",
       "id": 2
+    },
+    {
+      "firstName": "Andrew",
+      "lastName": "King",
+      "postCode": "BD4 2LX",
+      "phoneNum": "07925616953",
+      "emailAdd": "test@gmail.com",
+      "id": 3
+    },
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "postCode": "SP1 3EL",
+      "phoneNum": "07888666789",
+      "emailAdd": "homer@gmail.com",
+      "id": 4
     }
   ],
   "properties": [
     {
+      "sellnme": "Avatar Liddle",
       "prc": "100,000",
       "loc": "Leeds",
       "pcod": "LS1 1WQ",
@@ -94,6 +111,7 @@
       "id": 1
     },
     {
+      "sellnme": "Avatar Liddle",
       "prc": "250,000",
       "loc": "Oxford",
       "pcod": "OX12 2LS",
@@ -103,6 +121,7 @@
       "id": 2
     },
     {
+      "sellnme": "Avatar Liddle",
       "prc": "80,000",
       "loc": "Bradford",
       "pcod": "BD4 1QQ",
@@ -112,6 +131,7 @@
       "id": 3
     },
     {
+      "sellnme": "Avatar Liddle",
       "prc": "1,000,000",
       "loc": "Wakefield",
       "pcod": "WF12 4AA",
@@ -121,6 +141,7 @@
       "id": 4
     },
     {
+      "sellnme": "Avatar Liddle",
       "prc": "50,000",
       "loc": "Newcastle",
       "pcod": "NE1 1AD",
@@ -129,6 +150,56 @@
       "grdn": "No",
       "propertyStatus": "",
       "id": 5
+    },
+    {
+      "sellnme": "Avatar Liddle",
+      "prc": "100,000",
+      "loc": "Leeds",
+      "pcod": "LS1 1SW",
+      "beds": "4",
+      "bath": "2",
+      "grdn": "Yes",
+      "id": 8
+    },
+    {
+      "sellnme": "Avatar Liddle",
+      "prc": "200,000",
+      "loc": "Bradford",
+      "pcod": "BD1 2RE",
+      "beds": "2",
+      "bath": "2",
+      "grdn": "Yes",
+      "id": 9
+    },
+    {
+      "sellnme": "Andrew King",
+      "prc": "75,000",
+      "loc": "Bradford",
+      "pcod": "BD1 2GT",
+      "beds": "1",
+      "bath": "1",
+      "grdn": "No",
+      "id": 10
+    },
+    {
+      "sellnme": "Andrew King",
+      "prc": "123,456",
+      "loc": "Leeds",
+      "pcod": "LS1 1NS",
+      "beds": "1",
+      "bath": "2",
+      "grdn": "Yes",
+      "id": 11
+    },
+    {
+      "sellnme": "Homer Simpson",
+      "prc": "321,546",
+      "loc": "Springfield",
+      "pcod": "SP1 1WR",
+      "beds": "4",
+      "bath": "2",
+      "grdn": "Yes",
+      "id": 12
     }
   ]
 }

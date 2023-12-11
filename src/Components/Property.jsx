@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import bathroomPicture from "../images/bathroom-svgrepo-com.svg";
 import bedroomPicture from "../images/bed-svgrepo-com.svg";
 import gardenPicture from "../images/garden-svgrepo-com.svg";
+import sellerPicture from "../images/person-svgrepo-com.svg";
+
 
 
 function Property(props) {
@@ -18,6 +20,7 @@ function Property(props) {
                             <li className='list-group-item'> <img alt='bed' width="30px" src={bedroomPicture}/> {props.beds}</li>
                             <li className='list-group-item'> <img alt='bath' width="30px" src={bathroomPicture}/> {props.bath}</li>
                             <li className='list-group-item'> <img alt='garden' width="30px" src={gardenPicture}/> {props.grdn}</li>
+                            <li className='list-group-item'> <img alt='garden' width="30px" src={sellerPicture}/> {props.sellnme}</li>
                         </ul>
                         <div class="card-body">
                          <select 
@@ -43,7 +46,8 @@ Property.propTypes = {
     pcod: PropTypes.string.isRequired,
     beds: PropTypes.string.isRequired,
     bath: PropTypes.string.isRequired,
-    grdn: PropTypes.string.isRequired
+    grdn: PropTypes.string.isRequired,
+    sellnme: PropTypes.string.isRequired
 }
 
 export default Property;
