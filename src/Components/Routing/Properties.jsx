@@ -1,3 +1,5 @@
+import AddNewProperty from "../AddNewProperty";
+import AddProperties from "../AddProperties";
 import FilterProperties from "../FilterProperties";
 import AddProperty from "../SubmitProperty";
 
@@ -6,12 +8,7 @@ function Properties() {
     <div style={{marginTop: "50px", textAlign: "center"}}>
     
     <h1>Properties</h1> 
-    {/* <AddNewProperty/> */}
-    <br />
-    <AddProperty/>
-    <br />
-    <br />
-    <FilterProperties/>
+        <AddNewProperty/>
     </div>
     );
 }

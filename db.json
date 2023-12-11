@@ -85,7 +85,7 @@
   ],
   "properties": [
     {
-      "prc": "£100,000",
+      "prc": "100,000",
       "loc": "Leeds",
       "pcod": "LS1 1WQ",
       "beds": "3",
@@ -94,7 +94,7 @@
       "id": 1
     },
     {
-      "prc": "£250,000",
+      "prc": "250,000",
       "loc": "Oxford",
       "pcod": "OX12 2LS",
       "beds": "2",
@@ -103,7 +103,7 @@
       "id": 2
     },
     {
-      "prc": "£80,000",
+      "prc": "80,000",
       "loc": "Bradford",
       "pcod": "BD4 1QQ",
       "beds": "1",
@@ -112,13 +112,23 @@
       "id": 3
     },
     {
-      "prc": "£1,000,000",
+      "prc": "1,000,000",
       "loc": "Wakefield",
       "pcod": "WF12 4AA",
       "beds": "4",
       "bath": "3",
       "grdn": "Yes",
       "id": 4
+    },
+    {
+      "prc": "50,000",
+      "loc": "Newcastle",
+      "pcod": "NE1 1AD",
+      "beds": "1",
+      "bath": "1",
+      "grdn": "No",
+      "propertyStatus": "",
+      "id": 5
     }
   ]
 }
