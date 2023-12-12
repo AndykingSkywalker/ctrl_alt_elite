@@ -105,7 +105,7 @@
       "prc": "100,000",
       "loc": "Leeds",
       "pcod": "LS1 1WQ",
-      "beds": "3",
+      "beds": "2",
       "bath": "2",
       "grdn": "Yes",
       "id": 1
@@ -200,6 +200,16 @@
       "bath": "2",
       "grdn": "Yes",
       "id": 12
+    },
+    {
+      "sellnme": "Angelo Poretti",
+      "prc": "78,999",
+      "loc": "Oxford",
+      "pcod": "OX2 2NS",
+      "beds": "3",
+      "bath": "2",
+      "grdn": "No",
+      "id": 13
     }
   ]
 }
