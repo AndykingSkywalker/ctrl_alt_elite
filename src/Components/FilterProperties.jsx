@@ -51,9 +51,6 @@ useEffect(getProperties, [])
         beds={property.beds}
         bath={property.bath}
         grdn={property.grdn}
-        propertyStatus={property.propertyStatus}
-        sellnme={property.sellnme}
-
       />
     );
   }

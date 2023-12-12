@@ -55,14 +55,6 @@
       "phoneNum": "01114789525",
       "emailAdd": "Pints@gmail.com",
       "id": 8
-    },
-    {
-      "firstName": "Homer",
-      "lastName": "Simpson",
-      "postCode": "LS1 2JF",
-      "phoneNum": "07888888888",
-      "emailAdd": "homersimpson@gmail.com",
-      "id": 9
     }
   ],
   "sellers": [
@@ -81,22 +73,6 @@
       "phoneNum": "04465892474",
       "emailAdd": "Poretti@gmail.com",
       "id": 2
-    },
-    {
-      "firstName": "Andrew",
-      "lastName": "King",
-      "postCode": "BD4 2LX",
-      "phoneNum": "07925616953",
-      "emailAdd": "test@gmail.com",
-      "id": 3
-    },
-    {
-      "firstName": "Homer",
-      "lastName": "Simpson",
-      "postCode": "SP1 3EL",
-      "phoneNum": "07888666789",
-      "emailAdd": "homer@gmail.com",
-      "id": 4
     }
   ],
   "properties": [
@@ -105,10 +81,16 @@
       "prc": "100,000",
       "loc": "Leeds",
       "pcod": "LS1 1WQ",
-      "beds": "2",
+      "beds": "3",
       "bath": "2",
       "grdn": "Yes",
-      "id": 1
+      "id": 1,
+      "price": "£100,000",
+      "location": "Leeds",
+      "postcode": "LS1 1WQ",
+      "bedrooms": "3",
+      "bathrooms": "5",
+      "garden": "Yes"
     },
     {
       "sellnme": "Avatar Liddle",
@@ -128,7 +110,13 @@
       "beds": "1",
       "bath": "1",
       "grdn": "No",
-      "id": 3
+      "id": 3,
+      "price": "3534343",
+      "location": "Bradford",
+      "postcode": "BD4 1QQ",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "garden": "No"
     },
     {
       "sellnme": "Avatar Liddle",

@@ -1,13 +1,9 @@
 import PropTypes from 'prop-types';  
 import bathroomPicture from "../images/bathroom-svgrepo-com.svg";
 import bedroomPicture from "../images/bed-svgrepo-com.svg";
-import gardenPicture from "../images/garden-svgrepo-com.svg";
-import sellerPicture from "../images/person-svgrepo-com.svg";
-
-
+import gardenPicture from "../images/garden-svgrepo-com.svg"
 
 function Property(props) {
-
     return ( 
         <div className='col'>
             <div className='card'>
@@ -30,9 +26,6 @@ function Property(props) {
                             <option value="sold">Sold</option>
                             <option value="withdrawn">Withdrawn</option>
                          </select>
-                         <div className='card-footer'>
-                        <button className='btn btn-success '>Update</button>
-                         </div>
                      </div>
                     </div>
                 </div>
@@ -42,6 +35,7 @@ function Property(props) {
 }
 
 Property.propTypes = {
+    id: PropTypes.number.isRequired,
     prc: PropTypes.string.isRequired,
     pcod: PropTypes.string.isRequired,
     beds: PropTypes.string.isRequired,
