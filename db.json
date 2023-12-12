@@ -49,20 +49,28 @@
       "id": 7
     },
     {
-      "firstName": "Birra",
-      "lastName": "Moretti",
-      "postCode": "CF10 3DR",
-      "phoneNum": "01114789525",
-      "emailAdd": "Pints@gmail.com",
+      "firstName": "Avatar",
+      "lastName": "Liddle",
+      "postCode": "DT112SE",
+      "phoneNum": "01478524587",
+      "emailAdd": "Avs@gmail.com",
       "id": 8
     },
     {
-      "firstName": "Homer",
-      "lastName": "Simpson",
-      "postCode": "LS1 2JF",
-      "phoneNum": "07888888888",
-      "emailAdd": "homersimpson@gmail.com",
+      "firstName": "Avatar",
+      "lastName": "Liddle",
+      "postCode": "DT112SE",
+      "phoneNum": "01478524587",
+      "emailAdd": "Avs@gmail.com",
       "id": 9
+    },
+    {
+      "firstName": "Christmas",
+      "lastName": "Tree",
+      "postCode": "NP12 3RD",
+      "phoneNum": "04785123649",
+      "emailAdd": "Elf@gmail.com",
+      "id": 10
     }
   ],
   "sellers": [
@@ -81,6 +89,22 @@
       "phoneNum": "04465892474",
       "emailAdd": "Poretti@gmail.com",
       "id": 2
+    },
+    {
+      "firstName": "Carlsberg",
+      "lastName": "Pilsner",
+      "postCode": "CA24 4PA",
+      "phoneNum": "07845125847",
+      "emailAdd": "Pils@gmail.com",
+      "id": 3
+    },
+    {
+      "firstName": "Peroni",
+      "lastName": "Red",
+      "postCode": "CA24 4PA",
+      "phoneNum": "07845125847",
+      "emailAdd": "Red@gmail.com",
+      "id": 4
     }
   ],
   "properties": [
