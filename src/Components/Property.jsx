@@ -2,8 +2,15 @@ import PropTypes from 'prop-types';
 import bathroomPicture from "../images/bathroom-svgrepo-com.svg";
 import bedroomPicture from "../images/bed-svgrepo-com.svg";
 import gardenPicture from "../images/garden-svgrepo-com.svg"
+import { useNavigate } from 'react-router-dom';
+
 
 function Property(props) {
+    const handleEdit = () =>{
+        navigate("/edit/" + props.id)
+                
+    }
+    const navigate = useNavigate();
     return ( 
         <div className='col'>
             <div className='card'>
@@ -23,6 +30,9 @@ function Property(props) {
                             <option value="sold">Sold</option>
                             <option value="withdrawn">Withdrawn</option>
                          </select>
+                         <div>
+                            <br /><button className="btn btn-primary" onClick={handleEdit}>Edit Property details</button>
+                         </div>
                      </div>
                     </div>
                 </div>
@@ -32,6 +42,7 @@ function Property(props) {
 }
 
 Property.propTypes = {
+    id: PropTypes.number.isRequired,
     prc: PropTypes.string.isRequired,
     pcod: PropTypes.string.isRequired,
     beds: PropTypes.string.isRequired,

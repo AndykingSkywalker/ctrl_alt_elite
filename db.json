@@ -55,14 +55,6 @@
       "phoneNum": "01114789525",
       "emailAdd": "Pints@gmail.com",
       "id": 8
-    },
-    {
-      "firstName": "Homer",
-      "lastName": "Simpson",
-      "postCode": "LS1 2JF",
-      "phoneNum": "07888888888",
-      "emailAdd": "homersimpson@gmail.com",
-      "id": 9
     }
   ],
   "sellers": [
@@ -81,6 +73,14 @@
       "phoneNum": "04465892474",
       "emailAdd": "Poretti@gmail.com",
       "id": 2
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Balde",
+      "postCode": "BD16 4UB",
+      "phoneNum": "07459672824",
+      "emailAdd": "liliano.balde@hotmail.com",
+      "id": 3
     }
   ],
   "properties": [
@@ -89,9 +89,15 @@
       "loc": "Leeds",
       "pcod": "LS1 1WQ",
       "beds": "3",
-      "bath": "2",
+      "bath": "10",
       "grdn": "Yes",
-      "id": 1
+      "id": 1,
+      "price": "£100,000",
+      "location": "Leeds",
+      "postcode": "LS1 1WQ",
+      "bedrooms": "3",
+      "bathrooms": "5",
+      "garden": "Yes"
     },
     {
       "prc": "£250,000",
@@ -109,7 +115,13 @@
       "beds": "1",
       "bath": "1",
       "grdn": "No",
-      "id": 3
+      "id": 3,
+      "price": "3534343",
+      "location": "Bradford",
+      "postcode": "BD4 1QQ",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "garden": "No"
     },
     {
       "prc": "£1,000,000",

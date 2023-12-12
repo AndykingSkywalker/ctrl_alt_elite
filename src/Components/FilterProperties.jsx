@@ -49,6 +49,7 @@ useEffect(getProperties, [])
         beds={property.beds}
         bath={property.bath}
         grdn={property.grdn}
+        id={property.id}
       />
     );
   }
