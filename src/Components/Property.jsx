@@ -1,9 +1,20 @@
 import PropTypes from 'prop-types';  
 import bathroomPicture from "../images/bathroom-svgrepo-com.svg";
 import bedroomPicture from "../images/bed-svgrepo-com.svg";
-import gardenPicture from "../images/garden-svgrepo-com.svg"
+import gardenPicture from "../images/garden-svgrepo-com.svg";
+import sellerPicture from "../images/person-svgrepo-com.svg";
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Property(props) {
+
+    const handleEdit = () =>{
+        navigate("/edit/" + props.id)
+
+    }
+    const navigate = useNavigate();
+
     return ( 
         <div className='col'>
             <div className='card'>
@@ -19,14 +30,9 @@ function Property(props) {
                             <li className='list-group-item'> <img alt='garden' width="30px" src={sellerPicture}/> {props.sellnme}</li>
                         </ul>
                         <div class="card-body">
-                         <select 
-                         value ={props.status}
-                         className="form-select" id="">
-                            <option value="For Sale">For Sale</option>
-                            <option value="sold">Sold</option>
-                            <option value="withdrawn">Withdrawn</option>
-                         </select>
+                        <h5>{props.status}</h5>     
                      </div>
+                     <button className='btn btn-primary ' onClick={handleEdit}>Edit Property</button> <button className='btn btn-success '>Bookings</button>
                     </div>
                 </div>
             </div>

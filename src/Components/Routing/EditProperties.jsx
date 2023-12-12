@@ -15,6 +15,7 @@ function EditProperties() {
     const [bedrooms, setBedrooms] = useState ("");
     const [bathrooms, setBathrooms] = useState ("");
     const [garden, setGarden] = useState ("");
+    const [propertyStatus, setPropertyStatus] = useState ("");
 
     // function propertyInfo() {
 
@@ -28,6 +29,7 @@ function EditProperties() {
         setBedrooms(res.data.beds);
         setBathrooms(res.data.bath);
         setGarden(res.data.grdn);
+        setPropertyStatus(res.data.status);
     }).catch(error => console.error(error));
   }, []);
 
@@ -35,7 +37,7 @@ function EditProperties() {
         e.preventDefault();
     
 
-    axios.patch("http://localhost:3030/properties/" + params.id, { prc: price , loc: location, pcod: postcode, beds: bedrooms, bath: bathrooms, grdn: garden,})
+    axios.patch("http://localhost:3030/properties/" + params.id, { prc: price , loc: location, pcod: postcode, beds: bedrooms, bath: bathrooms, grdn: garden, status: propertyStatus})
         .then(() => {
             navigate("/properties")
 
@@ -46,7 +48,7 @@ function EditProperties() {
 return(
 
 
-<form onSubmit={handleSubmit} className="row gx-3 gy-2 align-items-center" style={{ justifyContent: "center", alignItems: "Center" }}>
+<form onSubmit={handleSubmit} className="row gx-3 gy-2" style={{ justifyContent: "center", marginTop: "50px"}}>
 
 <div class="col-auto">
     <label for="autoSizingInput">Price</label>
@@ -73,6 +75,13 @@ return(
         <option value="No">No</option>
     </select>
     <br />
+    <label for="autoSizingInput">Property Status</label>
+    <select className="form-select" name="garden" onChange={(e) => setPropertyStatus(e.target.value)} value={propertyStatus} id="bathrooms">
+        <option value="">Select an Option</option>
+        <option value="For Sale">For Sale</option>
+        <option value="Sold">Sold</option>
+        <option value="Withdrawn">Withdrawn</option>
+    </select>
     <button className="btn btn-primary" type="submit" >Submit</button>
     
 </div>
