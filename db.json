@@ -110,5 +110,24 @@
       "id": 3
     }
   ],
-  "bookings": []
+  "bookings": [
+    {
+      "date": "2023-12-14",
+      "time": "12:00 - 13:00",
+      "buyername": "Rick Miles",
+      "id": 1
+    },
+    {
+      "date": "2023-12-21",
+      "time": "14:00 - 15:00",
+      "buyername": "Birra Moretti",
+      "id": 2
+    },
+    {
+      "date": "2023-12-14",
+      "time": "15:00 - 16:00",
+      "buyername": "Paige Godwin",
+      "id": 3
+    }
+  ]
 }

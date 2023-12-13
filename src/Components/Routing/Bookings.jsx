@@ -39,6 +39,7 @@ function Bookings() {
                 date={booking.date}
                 buyername={booking.buyername}
                 id={booking.id}
+                getBookings={getBookings}
             />)
     }
 
@@ -59,7 +60,8 @@ function Bookings() {
         .then(response => {
             setDate("");
             setTime("");   
-            setBuyerName("");   
+            setBuyerName("");
+            getBookings()
         })
         .catch(error => console.error(error))
 
