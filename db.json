@@ -71,6 +71,14 @@
       "phoneNum": "04785123649",
       "emailAdd": "Elf@gmail.com",
       "id": 10
+    },
+    {
+      "firstName": "Carlsberg",
+      "lastName": "Pilsner",
+      "postCode": "CA24 4PA",
+      "phoneNum": "07845125847",
+      "emailAdd": "Pils@gmail.com",
+      "id": 11
     }
   ],
   "sellers": [
@@ -143,6 +151,15 @@
       "bath": "3",
       "grdn": "Yes",
       "id": 4
+    },
+    {
+      "prc": "100000",
+      "loc": "Trowbridge",
+      "pcod": "BA14 7TR",
+      "beds": "1",
+      "bath": "1",
+      "grdn": "No",
+      "id": 5
     }
   ]
 }
