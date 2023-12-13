@@ -1,17 +1,12 @@
-import FilterProperties from "../FilterProperties";
-import AddProperty from "../SubmitProperty";
+import AddNewProperty from "../AddNewProperty";
+
 
 function Properties() {
     return ( 
     <div style={{marginTop: "50px", textAlign: "center"}}>
     
     <h1>Properties</h1> 
-    {/* <AddNewProperty/> */}
-    <br />
-    <AddProperty/>
-    <br />
-    <br />
-    <FilterProperties/>
+        <AddNewProperty/>
     </div>
     );
 }
