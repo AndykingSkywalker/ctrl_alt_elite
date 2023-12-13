@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import bathroomPicture from "../images/bathroom-svgrepo-com.svg";
 import bedroomPicture from "../images/bed-svgrepo-com.svg";
 import gardenPicture from "../images/garden-svgrepo-com.svg"
+import sellerPicture from "../images/person-svgrepo-com.svg"
 
 function Property(props) {
     return ( 
