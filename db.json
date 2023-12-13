@@ -71,6 +71,14 @@
       "phoneNum": "04785123649",
       "emailAdd": "Elf@gmail.com",
       "id": 10
+    },
+    {
+      "firstName": "Carlsberg",
+      "lastName": "Pilsner",
+      "postCode": "CA24 4PA",
+      "phoneNum": "07845125847",
+      "emailAdd": "Pils@gmail.com",
+      "id": 11
     }
   ],
   "sellers": [
