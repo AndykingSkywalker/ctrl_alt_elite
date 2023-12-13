@@ -32,6 +32,7 @@ function AddNewProperty() {
         beds: bedrooms,
         bath: bathrooms,
         grdn: garden,
+        status: propertyStatus
       }
 
 
@@ -48,7 +49,7 @@ function AddNewProperty() {
         setBedrooms("");
         setBathrooms("");
         setGarden("");
-        SetPropertyStatus("");
+        SetPropertyStatus("For Sale");
         setSellerName("");
       })
       .catch(error => console.error(error))
@@ -91,9 +92,14 @@ function AddNewProperty() {
             {/* form with inputs for each piece of data */}
           
             <div >
-                <form onSubmit={handleSubmit} className="row gx-3 gy-2 align-items-center" style={{ justifyContent: "center", alignItems: "Center" }}>
+                <form onSubmit={handleSubmit} className="row gx-3 gy-2" style={{ justifyContent: "center"}}>
                 <div class="col-auto">
                     <SellerDropDown value={sellerName} onChange={(e) => setSellerName(e.target.value)} />
+                    <br />
+                    <br />
+                    <select className='form-select' onChange={(e) => SetPropertyStatus(e.target.value)}> 
+                          <option value="For Sale">For Sale</option>
+                        </select>
                 </div>
 
                     {/* NEED TO FIGURE OUT HOW TO CLEAR FIELDS ON SUBMIT */}

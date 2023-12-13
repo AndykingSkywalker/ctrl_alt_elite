@@ -35,7 +35,7 @@ useEffect(getProperties, [])
       (bathFilter && property.bath !== bathFilter) ||
       (gardenFilter &&
         !property.grdn.toLowerCase().startsWith(gardenFilter.toLowerCase())) ||
-        (currentStatus && property.propertyStatus !== currentStatus)
+        (currentStatus && property.propertyStatus !== currentStatus) 
     
     ) {
       continue;
@@ -51,6 +51,9 @@ useEffect(getProperties, [])
         beds={property.beds}
         bath={property.bath}
         grdn={property.grdn}
+        id={property.id}
+        status={property.status}
+        sellnme={property.sellnme}
       />
     );
   }
