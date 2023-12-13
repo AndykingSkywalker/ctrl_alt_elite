@@ -97,6 +97,17 @@
       "grdn": "Yes",
       "status": "Sold",
       "id": 2
+    },
+    {
+      "sellnme": "Angelo Poretti",
+      "prc": "123,456",
+      "loc": "Bradford",
+      "pcod": "BD1 1TS",
+      "beds": "3",
+      "bath": "2",
+      "grdn": "Yes",
+      "status": "For Sale",
+      "id": 3
     }
   ]
 }
