@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import bathroomPicture from "../images/bathroom-svgrepo-com.svg";
 import bedroomPicture from "../images/bed-svgrepo-com.svg";
 import gardenPicture from "../images/garden-svgrepo-com.svg"
+import { useNavigate } from 'react-router-dom';
+import sellerPicture from "../images/person-svgrepo-com.svg";
 
 function Property(props) {
 
@@ -9,7 +11,13 @@ function Property(props) {
         navigate("/edit/" + props.id)
 
     }
+    const handleBookings = () =>{
+        navigate("/bookings/" + props.id)
+
+    }
     const navigate = useNavigate();
+
+    
 
     return ( 
         <div className='col'>
@@ -28,7 +36,8 @@ function Property(props) {
                         <div class="card-body">
                         <h5>{props.status}</h5>     
                      </div>
-                     <button className='btn btn-primary ' onClick={handleEdit}>Edit Property</button> <button className='btn btn-success '>Bookings</button>
+                     <button className='btn btn-primary ' onClick={handleEdit}>Edit Property</button> 
+                     <button className='btn btn-success ' onClick={handleBookings}>Bookings</button>
                     </div>
                 </div>
             </div>
