@@ -103,20 +103,19 @@
       "beds": "2",
       "bath": "2",
       "grdn": "Yes",
-      "status": "Sold",
+      "status": "For Sale",
       "id": 2
     },
     {
       "sellnme": "Angelo Poretti",
-      "prc": "500000",
-      "loc": "Leeds",
-      "pcod": "LS1 1NS",
-      "beds": "1",
-      "bath": "1",
+      "prc": "123,456",
+      "loc": "Bradford",
+      "pcod": "BD1 1TS",
+      "beds": "3",
+      "bath": "2",
       "grdn": "Yes",
       "status": "For Sale",
       "id": 3
-<<<<<<< HEAD
     },
     {
       "sellnme": "Avatar Liddle",
@@ -150,11 +149,21 @@
       "grdn": "Yes",
       "status": "For Sale",
       "id": 6
-=======
->>>>>>> 448d77cd942c0b72fceac2092040bf0560627f62
     }
   ],
   "bookings": [
+    {
+      "date": "2023-12-14",
+      "time": "12:00 - 13:00",
+      "buyername": "Rick Miles",
+      "id": 1
+    },
+    {
+      "date": "2023-12-21",
+      "time": "14:00 - 15:00",
+      "buyername": "Birra Moretti",
+      "id": 2
+    },
     {
       "date": "2023-12-14",
       "time": "15:00 - 16:00",
