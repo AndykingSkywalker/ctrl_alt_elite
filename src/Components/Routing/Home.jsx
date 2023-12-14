@@ -1,4 +1,5 @@
 import Team from '../../MicrosoftTeams-image.png';
+import HomeTotals from '../HomeTotals';
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
 
                 <h1 >Welcome To The Colleague Management Tool</h1>
                 <br />
+                <HomeTotals />
                 <br />
                 <p>Team, each one of you brings unique strengths and expertise to our agency.
                     Your dedication and hard work are the foundation of our success.

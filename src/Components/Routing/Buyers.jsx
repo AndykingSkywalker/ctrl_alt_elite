@@ -125,7 +125,6 @@ function Buyers() {
                     {buyerComponent}
                 </tbody>
             </table>
-
         </div >
 
     )
