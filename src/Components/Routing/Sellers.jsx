@@ -103,10 +103,12 @@ function Sellers() {
             </div>
 
             {/* basic table that will eventually display the data */}
-
+            <br />
+            <br />
+            <br />
 
             <div className="col-auto">
-            <table className="table table-success">
+            <table className="table table-success" style={{ textAlign: "center", marginSide: "15%" }}>
                 <thead className="table-dark">
                     <tr>
                         <th>First Name</th>
