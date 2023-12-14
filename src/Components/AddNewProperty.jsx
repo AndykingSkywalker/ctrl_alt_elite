@@ -63,7 +63,7 @@ function AddNewProperty() {
 
 
   const newComponents = []
-  for (let created of newlyCreated) {
+  for (let created of properties) {
     newComponents.push(
         <Property
         key={created.prc + "" + created.loc}

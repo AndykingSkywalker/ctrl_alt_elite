@@ -43,7 +43,6 @@ function FilterProperties(props) {
         id={property.id}
         status={property.status}
         sellnme={property.sellnme}
-        getProperties={getProperties}
       />
     );
   }
