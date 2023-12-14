@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+#table-color{
+
+  
+ 
+  --bs-table-bg: purple
+}
+
+#seller-title {
+
+ color: purple;
+}
+
+.navbar-nav .nav-link:hover{
+  color: rgb(255, 247, 20);
+  text-decoration: underline;
+}

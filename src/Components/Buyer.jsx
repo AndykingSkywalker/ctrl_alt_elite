@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 function Buyer(props) {
-
+   
     return (
 
         <tr>
