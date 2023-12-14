@@ -124,9 +124,11 @@ function AddNewProperty() {
                         </select>
                    
                        <br />
-                       <div> 
-                    <button className="btn btn-primary " type="submit" >Submit</button>
+                       <div style={{marginRight: "100px"}}>
                     </div>
+                    </div>
+                    <div className='row'>
+                    <button style={{margin:"auto", width: "20%", alignItems: "center"}} className="btn btn-primary " type="submit" >Submit</button>
                     </div>
                 </form>
 

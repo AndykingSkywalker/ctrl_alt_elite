@@ -25,7 +25,7 @@ function SellerDropDown(props) {
     }
     return(
 
-        <select required value={props.value} onChange={props.onChange} >
+        <select className='form-select' required value={props.value} onChange={props.onChange} >
             <option value="">Select Seller of Property</option>
             {sellerNameComponent}
             
