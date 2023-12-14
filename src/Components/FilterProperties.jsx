@@ -2,30 +2,19 @@ import { useState, useEffect } from "react";
 import Property from "./Property";
 import axios from "axios";
 
-function FilterProperties() {
+function FilterProperties(props) {
   const [locationFilter, setLocationFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState("");
   const [bathFilter, setBathFilter] = useState("");
   const [bedFilter, setBedFilter] = useState("");
   const [gardenFilter, setGardenFilter] = useState("");
-  const [properties, setProperties] = useState([]);
-  const [currentStatus, setCurrentStatus] = useState("");
+  const [propertyStatus, setPropertyStatusFilter] = useState("");
 
+  // to commit
 
   const propertyComponents = [];
 
-  function getProperties() {
-    axios
-        .get("http://localhost:3030/properties")
-        .then((response) => {
-            setProperties(response.data)
-        })
-        .catch(error => console.error(error))
-}
-useEffect(getProperties, [])
-
-
-  for (const property of properties) {
+  for (const property of props.properties) {
     if (
       (locationFilter &&
         !property.loc.toLowerCase().startsWith(locationFilter.toLowerCase())) ||
@@ -35,7 +24,7 @@ useEffect(getProperties, [])
       (bathFilter && property.bath !== bathFilter) ||
       (gardenFilter &&
         !property.grdn.toLowerCase().startsWith(gardenFilter.toLowerCase())) ||
-        (currentStatus && property.propertyStatus !== currentStatus) 
+        (propertyStatus && property.status !== propertyStatus) 
     
     ) {
       continue;
@@ -44,7 +33,7 @@ useEffect(getProperties, [])
     console.log("Property:", property);
     propertyComponents.push(
       <Property
-        key={property.prc + " " + property.loc}
+        key={property.id}
         prc={property.prc}
         pcod={property.pcod}
         loc={property.loc}
@@ -82,6 +71,11 @@ useEffect(getProperties, [])
   function handlePriceFilter(event) {
     setPriceFilter(event.target.value);
     console.log("Price Handler:");
+  }
+
+  function handleStatusFilter(event) {
+    setPropertyStatusFilter(event.target.value);
+    console.log("Status Handler:");
   }
 
 
@@ -164,6 +158,21 @@ useEffect(getProperties, [])
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
+          </select>
+          <br />
+          <label htmlFor="exampleFormControlInput1" className="form-label">
+            Property Status
+          </label>
+          <select
+            onChange={handleStatusFilter}
+            value={propertyStatus}
+            className="form-select"
+            aria-label="Default"
+          >
+            <option value="">--Select a Property Status--</option>
+            <option value="For Sale">For Sale</option>
+            <option value="Sold">Sold</option>
+            <option value="Withdrawn">Withdrawn</option>
           </select>
         </div>
       </div>

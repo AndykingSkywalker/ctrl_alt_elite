@@ -42,7 +42,7 @@ function Buyers() {
 
 
         for (let buyer of buyers) {
-            if (firstName === buyer.firstName && lastName === buyer.lastName) {
+            if (firstName.toLowerCase() === buyer.firstName.toLowerCase() && lastName.toLowerCase() === buyer.lastName.toLowerCase()) {
                alert("Buyer already exists");
                return
             } else {
@@ -74,7 +74,7 @@ function Buyers() {
 
         <div style={{ textAlign: "center", marginTop: "50px" }}>
             <br />
-            <h1>Buyers page</h1>
+            <h1 style={{color: "purple", fontFamily: "monospace", textDecoration: "underline", textTransform: "capitalize"}}>Buyers page</h1>
             {/* form with inputs for each piece of data */}
             <br />
             <br />
@@ -100,7 +100,7 @@ function Buyers() {
                         <input className="form-control" value={emailAdd} onChange={event => setEmailAdd(event.target.value)} placeholder="Email Address" type="email" required></input>
 
                         <br />
-                        <button className="form-control" type="submit" >Submit</button>
+                        <button variant = 'primary' className="form-control" type="submit" color="primary" style={{color: 'white', backgroundColor: 'purple' }}>Submit</button>
                     </div>
                 </form>
 
@@ -111,7 +111,7 @@ function Buyers() {
             <br />
             <br />
 
-            <table className="table table-bordered, " style={{ textAlign: "center", marginSide: "15%" }}>
+            <table id="tableColor" className="table table-bordered, " style={{color: 'white', backgroundColor: 'purple', textAlign: "center", marginSide: "15%"}}>
                 <thead className="table-dark">
                     <tr>
                         <th>First Name</th>
@@ -125,7 +125,6 @@ function Buyers() {
                     {buyerComponent}
                 </tbody>
             </table>
-
         </div >
 
     )

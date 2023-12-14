@@ -2,9 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 
-
-
-
 function SellerDropDown(props) {
 
     const [sellers, setSellers] = useState([])
@@ -28,8 +25,8 @@ function SellerDropDown(props) {
     }
     return(
 
-        <select value={props.value} onChange={props.onChange} required>
-            <option selected>Select Seller of Property</option>
+        <select required value={props.value} onChange={props.onChange} >
+            <option value="">Select Seller of Property</option>
             {sellerNameComponent}
             
         </select>
