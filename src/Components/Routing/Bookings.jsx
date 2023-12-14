@@ -96,6 +96,7 @@ function Bookings() {
                         <th>Buyer</th>
                         <th>Date</th>
                         <th>Time slot</th>
+                        <th>Remove Booking</th>
                     </tr>
                 </thead>
                 <tbody className="table-group-divider">

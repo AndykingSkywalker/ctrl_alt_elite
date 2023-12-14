@@ -63,6 +63,14 @@
       "phoneNum": "0584858",
       "emailAdd": "123@gmail.com",
       "id": 9
+    },
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "postCode": "BD1 1DR",
+      "phoneNum": "0785794849",
+      "emailAdd": "mrsmith@gmail.com",
+      "id": 10
     }
   ],
   "sellers": [
@@ -89,6 +97,14 @@
       "phoneNum": "07925626254",
       "emailAdd": "andrew@gmail.com",
       "id": 3
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Smith",
+      "postCode": "PE21 5DR",
+      "phoneNum": "073489373",
+      "emailAdd": "psmith@hotmail.com",
+      "id": 4
     }
   ],
   "properties": [
@@ -166,7 +182,6 @@
       "beds": "1",
       "bath": "1",
       "grdn": "Yes",
-
       "status": "For Sale",
       "id": 3
     },
@@ -180,7 +195,17 @@
       "grdn": "No",
       "status": "Withdrawn",
       "id": 8
-
+    },
+    {
+      "sellnme": "Peter Smith",
+      "prc": "1234567",
+      "loc": "Wakefield",
+      "pcod": "WF12 1HT",
+      "beds": "1",
+      "bath": "2",
+      "grdn": "No",
+      "status": "For Sale",
+      "id": 9
     }
   ],
   "bookings": [
@@ -189,18 +214,6 @@
       "time": "12:00 - 13:00",
       "buyername": "Rick Miles",
       "id": 1
-    },
-    {
-      "date": "2023-12-21",
-      "time": "14:00 - 15:00",
-      "buyername": "Birra Moretti",
-      "id": 2
-    },
-    {
-      "date": "2023-12-14",
-      "time": "15:00 - 16:00",
-      "buyername": "Paige Godwin",
-      "id": 3
     }
   ]
 }

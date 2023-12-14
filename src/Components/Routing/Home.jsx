@@ -1,4 +1,4 @@
-import Team from '../../MicrosoftTeams-image.png';
+import Team from "../../MicrosoftTeams-image.png";
 import HomeTotals from '../HomeTotals';
 
 
