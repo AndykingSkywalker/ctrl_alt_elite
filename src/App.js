@@ -4,8 +4,11 @@ import Home from './Components/Routing/Home';
 import Buyers from './Components/Routing/Buyers';
 import Properties from './Components/Routing/Properties';
 import Sellers from './Components/Routing/Sellers';
+import EditProperties from './Components/Routing/EditProperties';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from './Logo.png';
+import Bookings from './Components/Routing/Bookings';
+
 
 function App() {
   return (
@@ -40,11 +43,14 @@ function App() {
           <Route path='/buyers' element={<Buyers />} />
           <Route path='/properties' element={<Properties />} />
           <Route path='/sellers' element={<Sellers />} />
+          <Route path='/edit/:id' element={<EditProperties />} />
+          <Route path='/bookings/:id' element={<Bookings />} />
         </Routes>
       </div>
 
     </Router>
   );
 }
+
 
 export default App;

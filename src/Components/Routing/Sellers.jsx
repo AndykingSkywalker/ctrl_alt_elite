@@ -40,7 +40,14 @@ function Sellers() {
     const handleSubmit = event => {
         event.preventDefault();
 
-        // Please update url to match the port your JSON server is running in! I was silly and didn't use the same as everyone else!!
+        for (let seller of sellers) {
+            if (firstName === seller.firstName && lastName === seller.lastName) {
+               alert("Seller already exists");
+               return
+            } else {
+                console.log("Submitted");
+            }
+        }
 
         axios.post("http://localhost:3030/sellers", { firstName, lastName, postCode, phoneNum, emailAdd })
 

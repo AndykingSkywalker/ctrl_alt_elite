@@ -9,6 +9,7 @@ function FilterProperties() {
   const [bedFilter, setBedFilter] = useState("");
   const [gardenFilter, setGardenFilter] = useState("");
   const [properties, setProperties] = useState([]);
+  const [currentStatus, setCurrentStatus] = useState("");
 
 
   const propertyComponents = [];
@@ -33,7 +34,8 @@ useEffect(getProperties, [])
       (priceFilter && property.prc !== priceFilter) ||
       (bathFilter && property.bath !== bathFilter) ||
       (gardenFilter &&
-        !property.grdn.toLowerCase().startsWith(gardenFilter.toLowerCase()))
+        !property.grdn.toLowerCase().startsWith(gardenFilter.toLowerCase())) ||
+        (currentStatus && property.propertyStatus !== currentStatus) 
     
     ) {
       continue;
@@ -49,10 +51,12 @@ useEffect(getProperties, [])
         beds={property.beds}
         bath={property.bath}
         grdn={property.grdn}
+        id={property.id}
+        status={property.status}
+        sellnme={property.sellnme}
       />
     );
   }
-
 
 
   function handleLocationFilter(event) {
@@ -79,6 +83,8 @@ useEffect(getProperties, [])
     setPriceFilter(event.target.value);
     console.log("Price Handler:");
   }
+
+
 
   return (
     <div className="container text-center">
