@@ -10,6 +10,7 @@ function FilterProperties(props) {
   const [gardenFilter, setGardenFilter] = useState("");
   const [currentStatus, setCurrentStatus] = useState("");
 
+  // to commit
 
   const propertyComponents = [];
 
