@@ -103,12 +103,10 @@ function Sellers() {
             </div>
 
             {/* basic table that will eventually display the data */}
-            <br />
-            <br />
-            <br />
 
 
-            <table className="table table-bordered">
+            <div className="col-auto">
+            <table className="table table-success">
                 <thead className="table-dark">
                     <tr>
                         <th>First Name</th>
@@ -122,7 +120,7 @@ function Sellers() {
                     {sellerComponent}
                 </tbody>
             </table>
-
+            </div>
         </div >
 
     )

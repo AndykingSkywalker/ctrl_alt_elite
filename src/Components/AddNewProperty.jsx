@@ -14,8 +14,7 @@ function AddNewProperty() {
     const [bedrooms, setBedrooms] = useState("");
     const [bathrooms, setBathrooms] = useState("")
     const [garden, setGarden] = useState("");
-    const [newlyCreated, setNewlyCreated] = useState("");
-    const [propertyStatus, SetPropertyStatus] = useState("");
+    const [propertyStatus, SetPropertyStatus] = useState("For Sale");
     const [sellerName, setSellerName] = useState("")
 
 
@@ -39,10 +38,7 @@ function AddNewProperty() {
       axios.post("http://localhost:3030/properties", newProperty)
       .then(response => {
 
-        const newData = newlyCreated
-
-        newData.push(newProperty)
-        setNewlyCreated(newData)
+        
         setPrice("");
         setLocation("");
         setPostCode("");
@@ -51,6 +47,7 @@ function AddNewProperty() {
         setGarden("");
         SetPropertyStatus("For Sale");
         setSellerName("");
+        getProperties ();
       })
       .catch(error => console.error(error))
     }
@@ -58,7 +55,7 @@ function AddNewProperty() {
     
   function getProperties () {
     axios.get("http://localhost:3030/properties")
-    .then((response) => {setNewlyCreated(response.data)})
+    .then((response) => {setProperties(response.data)})
 
   }
   useEffect (getProperties, [])
@@ -66,7 +63,7 @@ function AddNewProperty() {
 
 
   const newComponents = []
-  for (let created of newlyCreated) {
+  for (let created of properties) {
     newComponents.push(
         <Property
         key={created.prc + "" + created.loc}
@@ -83,26 +80,26 @@ function AddNewProperty() {
       )
     };
 
+
   return ( 
 
     <div>
     <div style={{ textAlign: "center", marginTop: "50px" }}>
             <br />
             <h5>Add a Property</h5>
-            {/* form with inputs for each piece of data */}
-          
+           
             <div >
                 <form onSubmit={handleSubmit} className="row gx-3 gy-2" style={{ justifyContent: "center"}}>
                 <div class="col-auto">
-                    <SellerDropDown value={sellerName} onChange={(e) => setSellerName(e.target.value)} />
+                    <SellerDropDown required value={sellerName} onChange={(e) => setSellerName(e.target.value)} />
                     <br />
                     <br />
-                    <select className='form-select' onChange={(e) => SetPropertyStatus(e.target.value)}> 
+                    <select className='form-select' onChange={(e) => SetPropertyStatus(e.target.value)} > 
                           <option value="For Sale">For Sale</option>
-                        </select>
+                    </select>
                 </div>
 
-                    {/* NEED TO FIGURE OUT HOW TO CLEAR FIELDS ON SUBMIT */}
+                    
                     <div class="col-auto">
                         <label for="autoSizingInput">Price</label>
                         <input className="form-control" value={price} onChange={event => setPrice(event.target.value)} placeholder="Price" type="text" required></input>
@@ -120,7 +117,7 @@ function AddNewProperty() {
                         <label for="autoSizingInput">Bathrooms</label>
                         <input className="form-control" value={bathrooms} onChange={event => setBathrooms(event.target.value)} placeholder="Number of Bathrooms" type="number" max="4" required></input>
                         <label htmlFor="">Has a Garden?</label>
-                        <select className='form-select' value={garden} onChange={(e) => setGarden(e.target.value)}  name="" id="">
+                        <select className='form-select' value={garden} onChange={(e) => setGarden(e.target.value)}  name="" id="" required>
                           <option value="">Select an Option</option>
                           <option value="Yes">Yes</option>
                           <option value="No">No</option>
@@ -139,10 +136,8 @@ function AddNewProperty() {
 
     <div>
       <br />
-    <FilterProperties/>
-        <div style={{display: "none"}}>
-              {newComponents}
-        </div>
+    <FilterProperties properties={properties}/>
+       
     </div>
 
     </div>
