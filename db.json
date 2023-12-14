@@ -49,36 +49,20 @@
       "id": 7
     },
     {
-      "firstName": "Avatar",
-      "lastName": "Liddle",
-      "postCode": "DT112SE",
-      "phoneNum": "01478524587",
-      "emailAdd": "Avs@gmail.com",
+      "firstName": "Birra",
+      "lastName": "Moretti",
+      "postCode": "CF10 3DR",
+      "phoneNum": "01114789525",
+      "emailAdd": "Pints@gmail.com",
       "id": 8
     },
     {
-      "firstName": "Avatar",
-      "lastName": "Liddle",
-      "postCode": "DT112SE",
-      "phoneNum": "01478524587",
-      "emailAdd": "Avs@gmail.com",
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "postCode": "LS1 1NS",
+      "phoneNum": "0584858",
+      "emailAdd": "123@gmail.com",
       "id": 9
-    },
-    {
-      "firstName": "Christmas",
-      "lastName": "Tree",
-      "postCode": "NP12 3RD",
-      "phoneNum": "04785123649",
-      "emailAdd": "Elf@gmail.com",
-      "id": 10
-    },
-    {
-      "firstName": "Carlsberg",
-      "lastName": "Pilsner",
-      "postCode": "CA24 4PA",
-      "phoneNum": "07845125847",
-      "emailAdd": "Pils@gmail.com",
-      "id": 11
     }
   ],
   "sellers": [
@@ -97,22 +81,6 @@
       "phoneNum": "04465892474",
       "emailAdd": "Poretti@gmail.com",
       "id": 2
-    },
-    {
-      "firstName": "Carlsberg",
-      "lastName": "Pilsner",
-      "postCode": "CA24 4PA",
-      "phoneNum": "07845125847",
-      "emailAdd": "Pils@gmail.com",
-      "id": 3
-    },
-    {
-      "firstName": "Peroni",
-      "lastName": "Red",
-      "postCode": "CA24 4PA",
-      "phoneNum": "07845125847",
-      "emailAdd": "Red@gmail.com",
-      "id": 4
     }
   ],
   "properties": [
@@ -135,22 +103,67 @@
       "beds": "2",
       "bath": "2",
       "grdn": "Yes",
-      "status": "Sold",
+      "status": "For Sale",
       "id": 2
     },
     {
       "sellnme": "Angelo Poretti",
-      "prc": "500000",
-      "loc": "Leeds",
-      "pcod": "LS1 1NS",
-      "beds": "1",
-      "bath": "1",
+      "prc": "123,456",
+      "loc": "Bradford",
+      "pcod": "BD1 1TS",
+      "beds": "3",
+      "bath": "2",
       "grdn": "Yes",
       "status": "For Sale",
       "id": 3
+    },
+    {
+      "sellnme": "Avatar Liddle",
+      "prc": "450,000",
+      "loc": "Bingley",
+      "pcod": "BD16 4UB",
+      "beds": "3",
+      "bath": "2",
+      "grdn": "Yes",
+      "status": "Sold",
+      "id": 4
+    },
+    {
+      "sellnme": "",
+      "prc": "123456",
+      "loc": "Leeds",
+      "pcod": "PO32 343",
+      "beds": "2",
+      "bath": "2",
+      "grdn": "Yes",
+      "status": "Sold",
+      "id": 5
+    },
+    {
+      "sellnme": "",
+      "prc": "123123",
+      "loc": "Test",
+      "pcod": "Test",
+      "beds": "2",
+      "bath": "2",
+      "grdn": "Yes",
+      "status": "For Sale",
+      "id": 6
     }
   ],
   "bookings": [
+    {
+      "date": "2023-12-14",
+      "time": "12:00 - 13:00",
+      "buyername": "Rick Miles",
+      "id": 1
+    },
+    {
+      "date": "2023-12-21",
+      "time": "14:00 - 15:00",
+      "buyername": "Birra Moretti",
+      "id": 2
+    },
     {
       "date": "2023-12-14",
       "time": "15:00 - 16:00",
