@@ -5,7 +5,7 @@ function Properties() {
     return ( 
     <div style={{marginTop: "50px", textAlign: "center"}}>
     
-    <h1>Properties</h1> 
+    <h1 style={{color: "purple", fontFamily: "monospace", textDecoration: "underline", textTransform: "capitalize"}}>Properties Page</h1>
         <AddNewProperty/>
     </div>
     );
