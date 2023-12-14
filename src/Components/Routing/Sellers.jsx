@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Seller from "../Seller";
 
 
+
 function Sellers() {
 
     const [firstName, setFirstName] = useState("");
@@ -41,7 +42,7 @@ function Sellers() {
         event.preventDefault();
 
         for (let seller of sellers) {
-            if (firstName === seller.firstName && lastName === seller.lastName) {
+            if (firstName.toLowerCase() === seller.firstName.toLowerCase() && lastName.toLowerCase() === seller.lastName.toLowerCase()) {
                alert("Seller already exists");
                return
             } else {
@@ -70,7 +71,11 @@ function Sellers() {
 
         <div style={{ textAlign: "center", marginTop: "50px" }}>
             <br />
+
+            <h1 id="seller-title">Sellers</h1>
+
             <h1 style={{color: "purple", fontFamily: "monospace", textDecoration: "underline", textTransform: "capitalize"}}>Sellers Page</h1>
+
             {/* form with inputs for each piece of data */}
             <br />
             <br />
@@ -111,12 +116,16 @@ function Sellers() {
             <div className="col-auto">
             <table className="table table-bordered">
 
+                <thead  id="table-color" className="table-dark">
+
+
             
 
             <div className="col-auto">
             <table className="table table-success" style={{ textAlign: "center", marginSide: "15%" }}>
 
                 <thead className="table-dark">
+
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>

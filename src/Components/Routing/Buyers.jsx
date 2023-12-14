@@ -42,7 +42,7 @@ function Buyers() {
 
 
         for (let buyer of buyers) {
-            if (firstName === buyer.firstName && lastName === buyer.lastName) {
+            if (firstName.toLowerCase() === buyer.firstName.toLowerCase() && lastName.toLowerCase() === buyer.lastName.toLowerCase()) {
                alert("Buyer already exists");
                return
             } else {

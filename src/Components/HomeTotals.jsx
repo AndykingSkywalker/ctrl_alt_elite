@@ -48,37 +48,23 @@ function HomeTotals() {
     useEffect(getBookings, [])
 
     return (
-        <div className="container text-center" style={{ borderStyle: "dashed", borderColor: "#f603a3" }}>
+        <div className="container text-center" >
             <div className="row">
-                <div className="col">
+                <div className="col" style={{ backgroundColor: "#a695aa", borderRadius: "10px", margin: "5px" }}>
                     <h3>Buyers</h3>
-                    {buyers.length}
+                    <h3>{buyers.length}</h3>
                 </div>
-                <div className="col">
+                <div className="col" style={{ backgroundColor: "#a695aa", borderRadius: "10px", margin: "5px" }}>
                     <h3>Sellers</h3>
-                    {sellers.length}
+                    <h3>{sellers.length}</h3>
                 </div>
-                <div className="col">
+                <div className="col" style={{ backgroundColor: "#a695aa", borderRadius: "10px", margin: "5px" }}>
                     <h3>Properties</h3>
-                    {properties.length}
+                    <h3>{properties.length}</h3>
                 </div>
-                <div className="col">
+                <div className="col" style={{ backgroundColor: "#a695aa", borderRadius: "10px", margin: "5px" }}>
                     <h3>Bookings</h3>
-                    {bookings.length}
-                </div>
-            </div>
-            <div className="row">
-                <div className="col">
-                    { }
-                </div>
-                <div className="col">
-                    { }
-                </div>
-                <div className="col">
-                    { }
-                </div>
-                <div className="col">
-                    { }
+                    <h3>{bookings.length}</h3>
                 </div>
             </div>
         </div>

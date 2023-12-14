@@ -166,6 +166,21 @@
       "beds": "1",
       "bath": "1",
       "grdn": "Yes",
+
+      "status": "For Sale",
+      "id": 3
+    },
+    {
+      "sellnme": "Carlsberg Pilsner",
+      "prc": "250,000",
+      "loc": "Newport",
+      "pcod": "NP19 1NA",
+      "beds": "2",
+      "bath": "1",
+      "grdn": "Yes",
+      "status": "For Sale",
+      "id": 4
+
       "status": "Withdrawn",
       "id": 7
     },
@@ -178,8 +193,8 @@
       "bath": "2",
       "grdn": "No",
       "status": "Withdrawn",
-      "picture": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "id": 8
+
     }
   ],
   "bookings": [
