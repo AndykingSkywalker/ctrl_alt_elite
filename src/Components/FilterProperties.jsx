@@ -2,30 +2,18 @@ import { useState, useEffect } from "react";
 import Property from "./Property";
 import axios from "axios";
 
-function FilterProperties() {
+function FilterProperties(props) {
   const [locationFilter, setLocationFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState("");
   const [bathFilter, setBathFilter] = useState("");
   const [bedFilter, setBedFilter] = useState("");
   const [gardenFilter, setGardenFilter] = useState("");
-  const [properties, setProperties] = useState([]);
   const [currentStatus, setCurrentStatus] = useState("");
 
 
   const propertyComponents = [];
 
-  function getProperties() {
-    axios
-        .get("http://localhost:3030/properties")
-        .then((response) => {
-            setProperties(response.data)
-        })
-        .catch(error => console.error(error))
-}
-useEffect(getProperties, [])
-
-
-  for (const property of properties) {
+  for (const property of props.properties) {
     if (
       (locationFilter &&
         !property.loc.toLowerCase().startsWith(locationFilter.toLowerCase())) ||
