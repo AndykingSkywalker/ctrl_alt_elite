@@ -37,6 +37,7 @@
   }
 }
 
+
 #table-color{
  
   --bs-table-bg: purple
@@ -47,7 +48,9 @@
  color: purple;
 }
 
+
 .navbar-nav .nav-link:hover{
   color: rgb(255, 247, 20);
   text-decoration: underline;
 }
+

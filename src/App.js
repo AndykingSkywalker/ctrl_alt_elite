@@ -16,7 +16,9 @@ function App() {
     <Router>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid fixed-top " style={{ backgroundColor: "purple" }}>
-          <a><img src={Logo} alt='Logo Icon' class="navbar-brand" width="75px" href={<Link className='nav-link' to="/" />} /></a>
+        <Link to="/">
+            <img src={Logo} alt='Logo Icon' className="navbar-brand" width="75px" />
+          </Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
