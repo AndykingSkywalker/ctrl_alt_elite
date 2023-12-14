@@ -72,8 +72,6 @@ function Sellers() {
         <div style={{ textAlign: "center", marginTop: "50px" }}>
             <br />
 
-            <h1 id="seller-title">Sellers</h1>
-
             <h1 style={{color: "purple", fontFamily: "monospace", textDecoration: "underline", textTransform: "capitalize"}}>Sellers Page</h1>
 
             {/* form with inputs for each piece of data */}
@@ -115,7 +113,7 @@ function Sellers() {
             
 
             <div className="col-auto">
-            <table className="table table-success" style={{ textAlign: "center", marginSide: "15%" }}>
+            <table  className="table table-bordered, " style={{color: 'white', backgroundColor: 'purple', textAlign: "center", marginSide: "15%"}}>
 
                 <thead className="table-dark">
 

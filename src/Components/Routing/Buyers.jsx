@@ -111,7 +111,7 @@ function Buyers() {
             <br />
             <br />
 
-            <table id="tableColor" className="table table-bordered, " style={{color: 'white', backgroundColor: 'purple', textAlign: "center", marginSide: "15%"}}>
+            <table  className="table table-bordered, " style={{color: 'white', backgroundColor: 'purple', textAlign: "center", marginSide: "15%"}}>
                 <thead className="table-dark">
                     <tr>
                         <th>First Name</th>
