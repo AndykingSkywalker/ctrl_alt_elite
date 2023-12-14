@@ -8,8 +8,9 @@ function FilterProperties(props) {
   const [bathFilter, setBathFilter] = useState("");
   const [bedFilter, setBedFilter] = useState("");
   const [gardenFilter, setGardenFilter] = useState("");
-  const [currentStatus, setCurrentStatus] = useState("");
+  const [propertyStatus, setPropertyStatusFilter] = useState("");
 
+  // to commit
 
   const propertyComponents = [];
 
@@ -23,7 +24,7 @@ function FilterProperties(props) {
       (bathFilter && property.bath !== bathFilter) ||
       (gardenFilter &&
         !property.grdn.toLowerCase().startsWith(gardenFilter.toLowerCase())) ||
-        (currentStatus && property.propertyStatus !== currentStatus) 
+        (propertyStatus && property.status !== propertyStatus) 
     
     ) {
       continue;
@@ -70,6 +71,11 @@ function FilterProperties(props) {
   function handlePriceFilter(event) {
     setPriceFilter(event.target.value);
     console.log("Price Handler:");
+  }
+
+  function handleStatusFilter(event) {
+    setPropertyStatusFilter(event.target.value);
+    console.log("Status Handler:");
   }
 
 
@@ -152,6 +158,21 @@ function FilterProperties(props) {
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
+          </select>
+          <br />
+          <label htmlFor="exampleFormControlInput1" className="form-label">
+            Property Status
+          </label>
+          <select
+            onChange={handleStatusFilter}
+            value={propertyStatus}
+            className="form-select"
+            aria-label="Default"
+          >
+            <option value="">--Select a Property Status--</option>
+            <option value="For Sale">For Sale</option>
+            <option value="Sold">Sold</option>
+            <option value="Withdrawn">Withdrawn</option>
           </select>
         </div>
       </div>

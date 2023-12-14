@@ -14,6 +14,7 @@ function Buyer(props) {
     );
 }
 
+
 Buyer.propTypes = {
     firstName: PropTypes.string,
     lastName: PropTypes.string,

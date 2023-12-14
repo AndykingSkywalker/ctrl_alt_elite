@@ -82,6 +82,7 @@ return(
         <option value="Sold">Sold</option>
         <option value="Withdrawn">Withdrawn</option>
     </select>
+    <br />
     <button className="btn btn-primary" type="" >Submit</button>
     
 </div>

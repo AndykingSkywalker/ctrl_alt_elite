@@ -71,7 +71,11 @@ function Sellers() {
 
         <div style={{ textAlign: "center", marginTop: "50px" }}>
             <br />
+
             <h1 id="seller-title">Sellers</h1>
+
+            <h1 style={{color: "purple", fontFamily: "monospace", textDecoration: "underline", textTransform: "capitalize"}}>Sellers Page</h1>
+
             {/* form with inputs for each piece of data */}
             <br />
             <br />
@@ -97,20 +101,31 @@ function Sellers() {
                         <input className="form-control" value={emailAdd} onChange={event => setEmailAdd(event.target.value)} placeholder="Email Address" type="email" required></input>
 
                         <br />
-                        <button className="form-control" type="submit" >Submit</button>
+                        <button className="form-control" type="submit" style={{color: 'white', backgroundColor: 'purple' }}>Submit</button>
                     </div>
                 </form>
 
             </div>
 
             {/* basic table that will eventually display the data */}
-            <br />
-            <br />
-            <br />
 
+            <br></br>
+            <br></br>
+            <br></br>
 
+            <div className="col-auto">
             <table className="table table-bordered">
+
                 <thead  id="table-color" className="table-dark">
+
+
+            
+
+            <div className="col-auto">
+            <table className="table table-success" style={{ textAlign: "center", marginSide: "15%" }}>
+
+                <thead className="table-dark">
+
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
@@ -123,7 +138,7 @@ function Sellers() {
                     {sellerComponent}
                 </tbody>
             </table>
-
+            </div>
         </div >
 
     )

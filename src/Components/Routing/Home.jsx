@@ -26,7 +26,7 @@ function Home() {
                 <br/>
                 <br/>
                 <h1>Meet the Team</h1>
-                <a><img src={Team} alt='Team Photo' width="50%" /></a>
+                <a><img className='img-fluid' src={Team} alt='Team Photo' width="50%" /></a>
                 <br />
 
                 <p>Left to right: Liliano Balde, Paige Godwin, Nathan Liddle, Richard Miles, Andrew King </p>

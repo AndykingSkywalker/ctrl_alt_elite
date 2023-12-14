@@ -15,7 +15,7 @@ function AddNewProperty() {
     const [bathrooms, setBathrooms] = useState("")
     const [garden, setGarden] = useState("");
     const [propertyStatus, SetPropertyStatus] = useState("For Sale");
-    const [sellerName, setSellerName] = useState("")
+    const [sellerName, setSellerName] = useState("");
 
 
 
@@ -62,7 +62,24 @@ function AddNewProperty() {
 
 
 
-  
+  const newComponents = []
+  for (let created of properties) {
+    newComponents.push(
+        <Property
+        key={created.prc + "" + created.loc}
+        prc={created.prc}
+        pcod={created.pcod}
+        loc={created.loc}
+        beds={created.beds}
+        bath={created.bath}
+        grdn={created.grdn}
+        propertyStatus={created.status}
+        sellnme={created.sellnme}
+
+        />
+      )
+    };
+
 
   return ( 
 
@@ -73,13 +90,10 @@ function AddNewProperty() {
            
             <div >
                 <form onSubmit={handleSubmit} className="row gx-3 gy-2" style={{ justifyContent: "center"}}>
-                <div class="col-auto">
-                    <SellerDropDown value={sellerName} onChange={(e) => setSellerName(e.target.value)} />
+                <div style={{marginTop: "35px"}} class="col-auto">
+                    <SellerDropDown required value={sellerName} onChange={(e) => setSellerName(e.target.value)} />
                     <br />
                     <br />
-                    <select className='form-select' onChange={(e) => SetPropertyStatus(e.target.value)} > 
-                          <option value="For Sale">For Sale</option>
-                    </select>
                 </div>
 
                     
@@ -105,12 +119,12 @@ function AddNewProperty() {
                           <option value="Yes">Yes</option>
                           <option value="No">No</option>
                         </select>
-                   
                        <br />
                        <div> 
                     <button className="btn btn-primary " type="submit" >Submit</button>
                     </div>
                     </div>
+              
                 </form>
 
             </div>
