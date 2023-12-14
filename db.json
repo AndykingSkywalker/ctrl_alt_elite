@@ -81,6 +81,14 @@
       "phoneNum": "04465892474",
       "emailAdd": "Poretti@gmail.com",
       "id": 2
+    },
+    {
+      "firstName": "Andrew",
+      "lastName": "King",
+      "postCode": "BD4 7SB",
+      "phoneNum": "07925626254",
+      "emailAdd": "andrew@gmail.com",
+      "id": 3
     }
   ],
   "properties": [
@@ -149,6 +157,44 @@
       "grdn": "Yes",
       "status": "For Sale",
       "id": 6
+    },
+    {
+      "sellnme": "Andrew King",
+      "prc": "81,000",
+      "loc": "Bradford",
+      "pcod": "BD4 9JS",
+      "beds": "1",
+      "bath": "1",
+      "grdn": "Yes",
+
+      "status": "For Sale",
+      "id": 3
+    },
+    {
+      "sellnme": "Carlsberg Pilsner",
+      "prc": "250,000",
+      "loc": "Newport",
+      "pcod": "NP19 1NA",
+      "beds": "2",
+      "bath": "1",
+      "grdn": "Yes",
+      "status": "For Sale",
+      "id": 4
+
+      "status": "Withdrawn",
+      "id": 7
+    },
+    {
+      "sellnme": "Andrew King",
+      "prc": "200,000",
+      "loc": "Oxford",
+      "pcod": "OX12 1NH",
+      "beds": "4",
+      "bath": "2",
+      "grdn": "No",
+      "status": "Withdrawn",
+      "id": 8
+
     }
   ],
   "bookings": [

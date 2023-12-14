@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 function Buyer(props) {
-
+   
     return (
 
         <tr>
@@ -13,6 +13,7 @@ function Buyer(props) {
         </tr>
     );
 }
+
 
 Buyer.propTypes = {
     firstName: PropTypes.string,
