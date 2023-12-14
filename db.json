@@ -171,20 +171,6 @@
       "id": 3
     },
     {
-      "sellnme": "Carlsberg Pilsner",
-      "prc": "250,000",
-      "loc": "Newport",
-      "pcod": "NP19 1NA",
-      "beds": "2",
-      "bath": "1",
-      "grdn": "Yes",
-      "status": "For Sale",
-      "id": 4
-
-      "status": "Withdrawn",
-      "id": 7
-    },
-    {
       "sellnme": "Andrew King",
       "prc": "200,000",
       "loc": "Oxford",
