@@ -108,29 +108,8 @@ function Bookings() {
         
 
     )
-
-    // useEffect(() => {
-    //     axios.get("http://localhost:3030/properties/" + params.id)
-    //     .then((res) => {
-    //         console.log(res);
-    //     }).catch(error => console.error(error));
-    //   }, []);
-    
-    //     const handleSubmit = (e) => {
-    //         e.preventDefault();
-
-
-
-
-    // axios.post("http://localhost:3030/bookings", + params.id, { date, time, buyername  })
-    // .then(response => {
-    //     setDate("");
-    //     setTime("");   
-    //     setBuyerName("");   
-    // })
-    // .catch(error => console.error(error))
    
 }
-// }
+
 
 export default Bookings
