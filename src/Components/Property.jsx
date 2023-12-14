@@ -5,6 +5,7 @@ import gardenPicture from "../images/garden-svgrepo-com.svg"
 import { useNavigate } from 'react-router-dom';
 import sellerPicture from "../images/person-svgrepo-com.svg";
 
+
 function Property(props) {
 
     const handleEdit = () =>{
@@ -37,7 +38,7 @@ function Property(props) {
                         <h5>{props.status}</h5>     
                      </div>
                      <button className='btn btn-primary ' onClick={handleEdit}>Edit Property</button> 
-                     <button className='btn btn-success ' onClick={handleBookings}>Bookings</button>
+                     <button style={{marginLeft: "10px"}} className='btn btn-success ' onClick={handleBookings}>Bookings</button>
                     </div>
                 </div>
             </div>

@@ -44,7 +44,7 @@ useEffect(getProperties, [])
     console.log("Property:", property);
     propertyComponents.push(
       <Property
-        key={property.prc + " " + property.loc}
+        key={property.id}
         prc={property.prc}
         pcod={property.pcod}
         loc={property.loc}
@@ -54,6 +54,7 @@ useEffect(getProperties, [])
         id={property.id}
         status={property.status}
         sellnme={property.sellnme}
+        getProperties={getProperties}
       />
     );
   }

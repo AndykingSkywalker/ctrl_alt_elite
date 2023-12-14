@@ -51,6 +51,7 @@ function AddNewProperty() {
         setGarden("");
         SetPropertyStatus("For Sale");
         setSellerName("");
+        getProperties("");
       })
       .catch(error => console.error(error))
     }
@@ -58,7 +59,7 @@ function AddNewProperty() {
     
   function getProperties () {
     axios.get("http://localhost:3030/properties")
-    .then((response) => {setNewlyCreated(response.data)})
+    .then((response) => {setProperties(response.data)})
 
   }
   useEffect (getProperties, [])
@@ -66,10 +67,10 @@ function AddNewProperty() {
 
 
   const newComponents = []
-  for (let created of newlyCreated) {
+  for (let created of properties) {
     newComponents.push(
         <Property
-        key={created.prc + "" + created.loc}
+        key={created.id}
         prc={created.prc}
         pcod={created.pcod}
         loc={created.loc}
@@ -94,7 +95,7 @@ function AddNewProperty() {
             <div >
                 <form onSubmit={handleSubmit} className="row gx-3 gy-2" style={{ justifyContent: "center"}}>
                 <div class="col-auto">
-                    <SellerDropDown value={sellerName} onChange={(e) => setSellerName(e.target.value)} />
+                    <SellerDropDown required value={sellerName} onChange={(e) => setSellerName(e.target.value)} />
                     <br />
                     <br />
                     <select className='form-select' onChange={(e) => SetPropertyStatus(e.target.value)}> 
