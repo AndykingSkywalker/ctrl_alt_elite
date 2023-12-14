@@ -112,13 +112,6 @@ function Sellers() {
             <br></br>
             <br></br>
             <br></br>
-
-            <div className="col-auto">
-            <table className="table table-bordered">
-
-                <thead  id="table-color" className="table-dark">
-
-
             
 
             <div className="col-auto">
