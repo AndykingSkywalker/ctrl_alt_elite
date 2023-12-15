@@ -23,7 +23,7 @@ function Bookings() {
 
     function getBookings() {
         axios
-            .get("http://localhost:3030/bookings")
+            .get("http://localhost:3030/bookings" )
             .then((response) => {
                 setBookings(response.data)
             })
