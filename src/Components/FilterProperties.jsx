@@ -82,8 +82,8 @@ function FilterProperties(props) {
 
   return (
     <div className="container text-center">
-        <h2 style={{textAlign: "center"}}>Filter Properties</h2>
-      <div className="row">
+      <div className="row" style={{ backgroundColor: "purple", borderRadius: "15px", color: "white", padding: "30px", width: "75%", margin: "auto" }}>
+      <h2 style={{ fontFamily: "monospace" }}>Filter Properties</h2>
         <div className="col">
           <label htmlFor="exampleFormControlInput1" className="form-label">
             Location

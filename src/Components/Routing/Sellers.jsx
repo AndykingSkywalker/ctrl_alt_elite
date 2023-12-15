@@ -43,8 +43,8 @@ function Sellers() {
 
         for (let seller of sellers) {
             if (firstName.toLowerCase() === seller.firstName.toLowerCase() && lastName.toLowerCase() === seller.lastName.toLowerCase()) {
-               alert("Seller already exists");
-               return
+                alert("Seller already exists");
+                return
             } else {
                 console.log("Submitted");
             }
@@ -71,13 +71,10 @@ function Sellers() {
 
         <div style={{ textAlign: "center", marginTop: "50px" }}>
             <br />
+            <h1 style={{ color: "purple", fontFamily: "monospace", textTransform: "capitalize", fontSize: "65px" }}>Sellers Page</h1>
+            <div style={{ backgroundColor: "purple", borderRadius: "15px", color: "white", paddingBottom: "20px", width: "50%", margin: "auto" }} >
 
-            <h1 style={{color: "purple", fontFamily: "monospace", textDecoration: "underline", textTransform: "capitalize"}}>Sellers Page</h1>
-
-            {/* form with inputs for each piece of data */}
-            <br />
-            <br />
-            <div >
+                <h3 style={{ color: "white", fontFamily: "monospace" }}>Add a Seller</h3>
                 <form onSubmit={handleSubmit} className="row gx-3 gy-2 align-items-center" style={{ justifyContent: "center", alignItems: "Center" }}>
 
                     {/* NEED TO FIGURE OUT HOW TO CLEAR FIELDS ON SUBMIT */}
@@ -99,7 +96,7 @@ function Sellers() {
                         <input className="form-control" value={emailAdd} onChange={event => setEmailAdd(event.target.value)} placeholder="Email Address" type="email" required></input>
 
                         <br />
-                        <button className="form-control" type="submit" style={{color: 'white', backgroundColor: 'purple' }}>Submit</button>
+                        <button className="form-control" type="submit" style={{ color: "white", fontWeight: "bold", backgroundColor: "#984da2" }}>Submit</button>
                     </div>
                 </form>
 
@@ -110,25 +107,25 @@ function Sellers() {
             <br></br>
             <br></br>
             <br></br>
-            
+
 
             <div className="col-auto">
-            <table  className="table table-bordered, " style={{color: 'white', backgroundColor: 'purple', textAlign: "center", marginSide: "15%"}}>
+                <table className="table table-bordered, " style={{ color: 'white', backgroundColor: 'purple', textAlign: "center", marginSide: "15%" }}>
 
-                <thead className="table-dark">
+                    <thead className="table-dark" id="table-color">
 
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Post Code</th>
-                        <th>Phone</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody className="table-group-divider">
-                    {sellerComponent}
-                </tbody>
-            </table>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Post Code</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody className="table-group-divider">
+                        {sellerComponent}
+                    </tbody>
+                </table>
             </div>
         </div >
 
