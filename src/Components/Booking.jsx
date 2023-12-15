@@ -10,7 +10,7 @@ function Booking(props) {
             <td>{props.buyername}</td>
             <td>{props.date}</td>
             <td>{props.time}</td>
-            <td><button className='btn btn-danger ' type="button" onClick={() => {
+            <td><button style={{ color: "white", fontWeight: "bold", backgroundColor: "#984da2" }} type="button" onClick={() => {
                         axios.delete("http://localhost:3030/bookings/" + props.id)
                             .then(res => { props.getBookings() })
                             

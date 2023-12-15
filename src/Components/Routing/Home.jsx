@@ -25,7 +25,7 @@ function Home() {
 
                 <br/>
                 <br/>
-                <h1>Meet the Team</h1>
+                <h1>Meet the Team!</h1>
                 <a><img className='img-fluid' src={Team} alt='Team Photo' width="50%" /></a>
                 <br />
 
@@ -34,33 +34,33 @@ function Home() {
             </article>
 
             <br />
-            <section>
-                <div style={{ backgroundColor: "#a695aa", borderRadius: "5px", padding: "5px", margin: "10px"}}>
+            <section style={{color: "white"}} >
+                <div style={{ backgroundColor: "#984da2", borderRadius: "5px", padding: "5px", margin: "10px"}}>
                     <h5>Liliano Balde</h5>
-                    <p>I bring pure european excellence. If you want a property secured like CR7 secures the
-                        ballon dor then you can trust me to make your dreams come true. SIUUUU</p>
+                    <p>"I bring pure european excellence. If you want a property secured like CR7 secures the
+                        ballon dor then you can trust me to make your dreams come true. SIUUUU"</p>
                 </div>
-                <div style={{ backgroundColor: "#a695aa", borderRadius: "5px", padding: "5px", margin: "10px"}}>
+                <div style={{ backgroundColor: "#984da2", borderRadius: "5px", padding: "5px", margin: "10px"}}>
                     <h5>Paige Godwin</h5>
-                    <p>A good estate agent puts the 'pro' in 'property' and the 'fun' in 'funding'!</p>
+                    <p>"A good estate agent puts the 'pro' in 'property' and the 'fun' in 'funding'!"</p>
                 </div>
-                <div style={{ backgroundColor: "#a695aa", borderRadius: "5px", padding: "5px", margin: "10px"}}>
+                <div style={{ backgroundColor: "#984da2", borderRadius: "5px", padding: "5px", margin: "10px"}}>
                     <h5>Nathan Liddle</h5>
-                    <p>I’m a totally rad estate agent with 10 years of experience in
+                    <p>"I’m a totally rad estate agent with 10 years of experience in
                         the industry. I’m like a superhero! So, if you’re looking
-                        for an agent who’s as cool as a cucumber and as smooth as butter, look no further!</p>
+                        for an agent who’s as cool as a cucumber and as smooth as butter, look no further!"</p>
                 </div>
-                <div style={{ backgroundColor: "#a695aa", borderRadius: "5px", padding: "5px", margin: "10px"}}>
+                <div style={{ backgroundColor: "#984da2", borderRadius: "5px", padding: "5px", margin: "10px"}}>
                     <h5>Richard Miles</h5>
-                    <p>Bringing a touch of flair to the world of real estate at Control Alt Elite! As an
+                    <p>"Bringing a touch of flair to the world of real estate at Control Alt Elite! As an
                         estate agent, I spin property magic, turning dreams into deeds. With a knack for
                         finding the perfect match and a knackier skill in negotiation, I'm the Sherlock Holmes
-                        of homes. Let's embark on this adventure together and make your property dreams a reality!</p>
+                        of homes. Let's embark on this adventure together and make your property dreams a reality!"</p>
                 </div>
-                <div style={{ backgroundColor: "#a695aa", borderRadius: "5px", padding: "5px", margin: "10px"}}>
+                <div style={{ backgroundColor: "#984da2", borderRadius: "5px", padding: "5px", margin: "10px"}}>
                     <h5>Andrew King</h5>
-                    <p>The 'King' of the property world as named by some but in reality im just a truly humble man giving
-                        families homes whilst raking in commission.</p>
+                    <p>"The 'King' of the property world as named by some but in reality im just a truly humble man giving
+                        families homes whilst raking in commission."</p>
                 </div>
             </section>
 

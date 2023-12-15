@@ -68,11 +68,11 @@ function Bookings() {
     } 
     return(
         <>
-
-        <form onSubmit={handleSubmit} style={{marginTop: "50px"}}>
-            <input onChange={(e) => setDate (e.target.value)} value={date} type="date" name="bookings" id="bookings" />
+<div style={{ backgroundColor: "purple", borderRadius: "15px", color: "white", paddingBottom: "20px", width: "50%", margin: "auto" }} ></div>
+        <form onSubmit={handleSubmit} style={{marginTop: "50px"}} >
+            <input onChange={(e) => setDate (e.target.value)} value={date} type="date" name="bookings" id="bookings" className="form-control"/>
         
-            <select onChange={(e) => setTime (e.target.value)} value={time} name="timeslot" id="timeslot">
+            <select onChange={(e) => setTime (e.target.value)} value={time} name="timeslot" id="timeslot" className="form-control">
                 <option value="8:00 - 9:00">8:00 - 9:00</option>
                 <option value="9:00 - 10:00">9:00 - 10:00</option>
                 <option value="10:00 - 11:00">10:00 - 11:00</option>
@@ -85,13 +85,13 @@ function Bookings() {
             </select>
         
         
-            <BuyerDropDown value={buyername} onChange={(e) => setBuyerName (e.target.value)}/>
+            <BuyerDropDown value={buyername} onChange={(e) => setBuyerName (e.target.value)} className="form-control"/>
             <button type='submit'>Submit</button>
         </form >
-        
+        <div/>
 
-        <table className="table table-bordered, " style={{ textAlign: "center", marginSide: "15%" }}>
-                <thead className="table-dark">
+        <table className="table table-bordered" style={{ textAlign: "center", marginSide: "15%" }}>
+                <thead className="table-dark" id="table-color">
                     <tr>
                         <th>Buyer</th>
                         <th>Date</th>
