@@ -47,9 +47,10 @@ function EditProperties() {
 
 return(
 
-
-<form onSubmit={handleSubmit} className="row gx-3 gy-2" style={{ justifyContent: "center", marginTop: "50px"}}>
-
+    <>
+    <h1 style={{ color: "purple", fontFamily: "monospace", textTransform: "capitalize", fontSize: "65px", marginTop: "50px", textAlign: "center" }}>Edit Property</h1>
+<form onSubmit={handleSubmit} className="row gx-3 gy-2" style={{ justifyContent: "center", marginTop: "20px"}}>
+<div className='row' style={{ backgroundColor: "purple", borderRadius: "15px", color: "white", padding: "30px", width: "50%", margin: "auto", justifyContent: "center" }}> 
 <div class="col-auto">
     <label for="autoSizingInput">Price</label>
     <input className="form-control" onChange={event => setPrice(event.target.value)} type="text" id="price" value={price}/>
@@ -59,6 +60,14 @@ return(
 
     <label for="autoSizingInput">Postcode</label>
     <input className="form-control" onChange={event => setPostcode(event.target.value)} type="text" id="postcode" name="postcode" value={postcode}/>
+    
+    <label for="autoSizingInput">Property Status</label>
+    <select className="form-select" name="garden" onChange={(e) => setPropertyStatus(e.target.value)} value={propertyStatus} id="bathrooms">
+        <option value="">Select an Option</option>
+        <option value="For Sale">For Sale</option>
+        <option value="Sold">Sold</option>
+        <option value="Withdrawn">Withdrawn</option>
+    </select>
 </div>
 <div class="col-auto">
     <label for="autoSizingInput">Bedrooms</label>
@@ -74,22 +83,16 @@ return(
         <option value="Yes">Yes</option>
         <option value="No">No</option>
     </select>
+    <br />  
+    <button style={{ color: "white", fontWeight: "bold", backgroundColor: "#984da2", marginLeft:"30px",  width: "75%" }} className='form-control' type="" >Submit</button>
     <br />
-    <label for="autoSizingInput">Property Status</label>
-    <select className="form-select" name="garden" onChange={(e) => setPropertyStatus(e.target.value)} value={propertyStatus} id="bathrooms">
-        <option value="">Select an Option</option>
-        <option value="For Sale">For Sale</option>
-        <option value="Sold">Sold</option>
-        <option value="Withdrawn">Withdrawn</option>
-    </select>
-    <br />
-    <button className="btn btn-primary" type="" >Submit</button>
     
 </div>
+</div>
 </form>
+</>
    )
 
-    
 }
 
 
