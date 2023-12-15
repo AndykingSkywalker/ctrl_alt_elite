@@ -69,10 +69,10 @@ function Bookings() {
     return(
         <>
 <div style={{ backgroundColor: "purple", borderRadius: "15px", color: "white", paddingBottom: "20px", width: "50%", margin: "auto" }} ></div>
-        <form onSubmit={handleSubmit} style={{marginTop: "50px"}} >
+        <form onSubmit={handleSubmit} style={{marginTop: "50px", width: "20%", marginLeft: "20px"}} >
             <input onChange={(e) => setDate (e.target.value)} value={date} type="date" name="bookings" id="bookings" className="form-control"/>
-        
-            <select onChange={(e) => setTime (e.target.value)} value={time} name="timeslot" id="timeslot" className="form-control">
+            <br />
+            <select onChange={(e) => setTime (e.target.value)} value={time} name="timeslot" id="timeslot" className="form-select">
                 <option value="8:00 - 9:00">8:00 - 9:00</option>
                 <option value="9:00 - 10:00">9:00 - 10:00</option>
                 <option value="10:00 - 11:00">10:00 - 11:00</option>
@@ -84,11 +84,14 @@ function Bookings() {
                 <option value="16:00 - 17:00">16:00 - 17:00</option>
             </select>
         
-        
+            <br />
             <BuyerDropDown value={buyername} onChange={(e) => setBuyerName (e.target.value)} className="form-control"/>
-            <button type='submit'>Submit</button>
+            <br />
+            <br />
+            <button style={{ color: "white", fontWeight: "bold", backgroundColor: "#984da2" }} type='submit'>Submit</button>
         </form >
         <div/>
+        <br />
 
         <table className="table table-bordered" style={{ textAlign: "center", marginSide: "15%" }}>
                 <thead className="table-dark" id="table-color">
