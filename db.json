@@ -1,219 +1,168 @@
 {
   "buyers": [
     {
-      "firstName": "Nathan",
-      "lastName": "Liddle",
-      "postCode": "NP72 9AN",
-      "phoneNum": "07938593017",
-      "emailAdd": "nathansemail@gmail.com",
+      "firstName": "Craig",
+      "lastName": "Morris",
+      "postCode": "NP19 7WD",
+      "phoneNum": "07827483957",
+      "emailAdd": "craig@gmail.com",
       "id": 1
     },
     {
-      "firstName": "Paige",
-      "lastName": "Godwin",
-      "postCode": "NP19 0RW",
-      "phoneNum": "07850280289",
-      "emailAdd": "paige227@hotmail.co.uk",
+      "firstName": "Mike",
+      "lastName": "Atkinson",
+      "postCode": "CF21 3SG",
+      "phoneNum": "07816481738",
+      "emailAdd": "mike@gmail.com",
       "id": 2
     },
     {
-      "firstName": "Rick",
-      "lastName": "Miles",
-      "postCode": "NP82 6DI",
-      "phoneNum": "08264928468",
-      "emailAdd": "rm@gmail.com",
+      "firstName": "Adele",
+      "lastName": "Watkins",
+      "postCode": "NP17 5WN",
+      "phoneNum": "07857264829",
+      "emailAdd": "adele@gmail.com",
       "id": 3
     },
     {
-      "firstName": "Jordan",
-      "lastName": "Harrison",
-      "postCode": "NP82 3FE",
-      "phoneNum": "07829572938",
-      "emailAdd": "j@gmail.com",
-      "id": 4
-    },
-    {
       "firstName": "Andrew",
-      "lastName": "King",
-      "postCode": "NP25 6WE",
-      "phoneNum": "07829478293",
-      "emailAdd": "ajk@gmail.com",
-      "id": 5
-    },
-    {
-      "firstName": "Leo",
-      "lastName": "Balde",
-      "postCode": "NP20 5TH",
-      "phoneNum": "07845698302",
-      "emailAdd": "Leo@gmail.com",
-      "id": 7
-    },
-    {
-      "firstName": "Birra",
-      "lastName": "Moretti",
-      "postCode": "CF10 3DR",
-      "phoneNum": "01114789525",
-      "emailAdd": "Pints@gmail.com",
-      "id": 8
-    },
-    {
-      "firstName": "Homer",
-      "lastName": "Simpson",
-      "postCode": "LS1 1NS",
-      "phoneNum": "0584858",
-      "emailAdd": "123@gmail.com",
-      "id": 9
-    },
-    {
-      "firstName": "John",
-      "lastName": "Smith",
-      "postCode": "BD1 1DR",
-      "phoneNum": "0785794849",
-      "emailAdd": "mrsmith@gmail.com",
-      "id": 10
+      "lastName": "Clark",
+      "postCode": "SA82 2SH",
+      "phoneNum": "07849183758",
+      "emailAdd": "andrew@gmail.com",
+      "id": 4
     }
   ],
   "sellers": [
     {
-      "firstName": "Avatar",
-      "lastName": "Liddle",
-      "postCode": "DT11 2SD",
-      "phoneNum": "07845512489",
-      "emailAdd": "Avs@gmail.com",
+      "firstName": "Sailesh",
+      "lastName": "Patel",
+      "postCode": "NP17 9EJ",
+      "phoneNum": "07827481527",
+      "emailAdd": "sailesh@gmail.com",
       "id": 1
     },
     {
-      "firstName": "Angelo",
-      "lastName": "Poretti",
-      "postCode": "P1 4FE",
-      "phoneNum": "04465892474",
-      "emailAdd": "Poretti@gmail.com",
+      "firstName": "Anna",
+      "lastName": "Wilson",
+      "postCode": "LS17 9EG",
+      "phoneNum": "07890837268",
+      "emailAdd": "anna@hotmail.co.uk",
       "id": 2
     },
     {
-      "firstName": "Andrew",
-      "lastName": "King",
-      "postCode": "BD4 7SB",
-      "phoneNum": "07925626254",
-      "emailAdd": "andrew@gmail.com",
+      "firstName": "Augustina",
+      "lastName": "Di Paola",
+      "postCode": "OX17 9EG",
+      "phoneNum": "07871368947",
+      "emailAdd": "augustina@gmail.com",
       "id": 3
     },
     {
-      "firstName": "Peter",
-      "lastName": "Smith",
-      "postCode": "PE21 5DR",
-      "phoneNum": "073489373",
-      "emailAdd": "psmith@hotmail.com",
+      "firstName": "Jennifer",
+      "lastName": "Okechukwu",
+      "postCode": "NP20 8EB",
+      "phoneNum": "07872846294",
+      "emailAdd": "jennifer@gmail.com",
       "id": 4
+    },
+    {
+      "firstName": "Liam",
+      "lastName": "McNabola",
+      "postCode": "LS83 7AH",
+      "phoneNum": "07893847289",
+      "emailAdd": "liam@hotmail.com",
+      "id": 5
+    },
+    {
+      "firstName": "Patryk",
+      "lastName": "Flasz",
+      "postCode": "OX16 8EV",
+      "phoneNum": "07992849274",
+      "emailAdd": "patryk@gmail.com",
+      "id": 6
     }
   ],
   "properties": [
     {
-      "sellnme": "Avatar Liddle",
-      "prc": "100,000",
-      "loc": "Leeds",
-      "pcod": "LS1 1WQ",
+      "sellnme": "Sailesh Patel",
+      "prc": "240,000",
+      "loc": "Newport",
+      "pcod": "NP17 9EJ",
       "beds": "3",
       "bath": "2",
       "grdn": "Yes",
-      "id": 1,
-      "status": "For Sale"
+      "status": "For Sale",
+      "id": 1
     },
     {
-      "sellnme": "Angelo Poretti",
-      "prc": "350,000",
+      "sellnme": "Anna Wilson",
+      "prc": "190,000",
       "loc": "Leeds",
-      "pcod": "LS1 1NS",
+      "pcod": "LS17 9EG",
       "beds": "2",
       "bath": "2",
-      "grdn": "Yes",
+      "grdn": "No",
       "status": "For Sale",
       "id": 2
     },
     {
-      "sellnme": "Angelo Poretti",
-      "prc": "123,456",
-      "loc": "Bradford",
-      "pcod": "BD1 1TS",
-      "beds": "3",
+      "sellnme": "Augustina Di Paola",
+      "prc": "350,000",
+      "loc": "Oxford",
+      "pcod": "OX17 9EG",
+      "beds": "4",
       "bath": "2",
       "grdn": "Yes",
       "status": "For Sale",
       "id": 3
     },
     {
-      "sellnme": "Avatar Liddle",
-      "prc": "450,000",
-      "loc": "Bingley",
-      "pcod": "BD16 4UB",
-      "beds": "3",
-      "bath": "2",
-      "grdn": "Yes",
-      "status": "Sold",
+      "sellnme": "Jennifer Okechukwu",
+      "prc": "120,000",
+      "loc": "Newport",
+      "pcod": "NP20 8EB",
+      "beds": "2",
+      "bath": "1",
+      "grdn": "No",
+      "status": "For Sale",
       "id": 4
     },
     {
-      "sellnme": "",
-      "prc": "123456",
+      "sellnme": "Liam McNabola",
+      "prc": "145,000",
       "loc": "Leeds",
-      "pcod": "PO32 343",
+      "pcod": "LS83 7AH",
       "beds": "2",
-      "bath": "2",
-      "grdn": "Yes",
-      "status": "Sold",
-      "id": 5
-    },
-    {
-      "sellnme": "",
-      "prc": "123123",
-      "loc": "Test",
-      "pcod": "Test",
-      "beds": "2",
-      "bath": "2",
-      "grdn": "Yes",
-      "status": "For Sale",
-      "id": 6
-    },
-    {
-      "sellnme": "Andrew King",
-      "prc": "81,000",
-      "loc": "Bradford",
-      "pcod": "BD4 9JS",
-      "beds": "1",
       "bath": "1",
       "grdn": "Yes",
       "status": "For Sale",
-      "id": 3
+      "id": 5
     },
     {
-      "sellnme": "Andrew King",
-      "prc": "200,000",
+      "sellnme": "Patryk Flasz",
+      "prc": "450,000",
       "loc": "Oxford",
-      "pcod": "OX12 1NH",
+      "pcod": "OX16 8EV",
       "beds": "4",
-      "bath": "2",
-      "grdn": "No",
-      "status": "Withdrawn",
-      "id": 8
-    },
-    {
-      "sellnme": "Peter Smith",
-      "prc": "1234567",
-      "loc": "Wakefield",
-      "pcod": "WF12 1HT",
-      "beds": "1",
-      "bath": "2",
-      "grdn": "No",
+      "bath": "3",
+      "grdn": "Yes",
       "status": "For Sale",
-      "id": 9
+      "id": 6
     }
   ],
   "bookings": [
     {
-      "date": "2023-12-14",
-      "time": "12:00 - 13:00",
-      "buyername": "Rick Miles",
+      "date": "2023-12-18",
+      "time": "10:00 - 11:00",
+      "buyername": "Craig Morris",
       "id": 1
+    },
+    {
+      "date": "2023-12-18",
+      "time": "12:00 - 13:00",
+      "buyername": "Adele Watkins",
+      "id": 2
     }
   ]
 }
